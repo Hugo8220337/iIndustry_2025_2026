@@ -1,0 +1,722 @@
+[
+  {
+    "uniqueId": "ws1-aas-state",
+    "serverUrl": "node-red",
+    "serverPort": 4840,
+    "pathToService": "",
+    "nodeInformation": "ns=2;s=WS1.OperationalData.CurrentState",
+    "allowAnonymous": true
+  },
+  {
+    "uniqueId": "ws1-aas-workorder-id",
+    "serverUrl": "node-red",
+    "serverPort": 4840,
+    "pathToService": "",
+    "nodeInformation": "ns=2;s=WS1.OperationalData.ActiveWorkOrderId",
+    "allowAnonymous": true
+  },
+  {
+    "uniqueId": "ws1-aas-mo-id",
+    "serverUrl": "node-red",
+    "serverPort": 4840,
+    "pathToService": "",
+    "nodeInformation": "ns=2;s=WS1.OperationalData.ActiveManufacturingOrderId",
+    "allowAnonymous": true
+  },
+  {
+    "uniqueId": "ws1-aas-pause-reason",
+    "serverUrl": "node-red",
+    "serverPort": 4840,
+    "pathToService": "",
+    "nodeInformation": "ns=2;s=WS1.OperationalData.PauseReason",
+    "allowAnonymous": true
+  },
+  {
+    "uniqueId": "ws1-aas-pause-reason-type",
+    "serverUrl": "node-red",
+    "serverPort": 4840,
+    "pathToService": "",
+    "nodeInformation": "ns=2;s=WS1.OperationalData.PauseReasonType",
+    "allowAnonymous": true
+  },
+  {
+    "uniqueId": "ws1-kpi-availability-value",
+    "serverUrl": "node-red",
+    "serverPort": 4840,
+    "pathToService": "",
+    "nodeInformation": "ns=2;s=WS1.KPI.Availability.Value",
+    "allowAnonymous": true
+  },
+  {
+    "uniqueId": "ws1-kpi-availability-plannedproductiontime",
+    "serverUrl": "node-red",
+    "serverPort": 4840,
+    "pathToService": "",
+    "nodeInformation": "ns=2;s=WS1.KPI.Availability.PlannedProductionTime",
+    "allowAnonymous": true
+  },
+  {
+    "uniqueId": "ws1-kpi-availability-actualproductiontime",
+    "serverUrl": "node-red",
+    "serverPort": 4840,
+    "pathToService": "",
+    "nodeInformation": "ns=2;s=WS1.KPI.Availability.ActualProductionTime",
+    "allowAnonymous": true
+  },
+  {
+    "uniqueId": "ws1-kpi-availability-lastupdated",
+    "serverUrl": "node-red",
+    "serverPort": 4840,
+    "pathToService": "",
+    "nodeInformation": "ns=2;s=WS1.KPI.Availability.LastUpdated",
+    "allowAnonymous": true
+  },
+  {
+    "uniqueId": "ws1-kpi-performance-value",
+    "serverUrl": "node-red",
+    "serverPort": 4840,
+    "pathToService": "",
+    "nodeInformation": "ns=2;s=WS1.KPI.Performance.Value",
+    "allowAnonymous": true
+  },
+  {
+    "uniqueId": "ws1-kpi-performance-idealcycletime",
+    "serverUrl": "node-red",
+    "serverPort": 4840,
+    "pathToService": "",
+    "nodeInformation": "ns=2;s=WS1.KPI.Performance.IdealCycleTime",
+    "allowAnonymous": true
+  },
+  {
+    "uniqueId": "ws1-kpi-performance-actualcycletime",
+    "serverUrl": "node-red",
+    "serverPort": 4840,
+    "pathToService": "",
+    "nodeInformation": "ns=2;s=WS1.KPI.Performance.ActualCycleTime",
+    "allowAnonymous": true
+  },
+  {
+    "uniqueId": "ws1-kpi-performance-totalunitsproduced",
+    "serverUrl": "node-red",
+    "serverPort": 4840,
+    "pathToService": "",
+    "nodeInformation": "ns=2;s=WS1.KPI.Performance.TotalUnitsProduced",
+    "allowAnonymous": true
+  },
+  {
+    "uniqueId": "ws1-kpi-performance-lastupdated",
+    "serverUrl": "node-red",
+    "serverPort": 4840,
+    "pathToService": "",
+    "nodeInformation": "ns=2;s=WS1.KPI.Performance.LastUpdated",
+    "allowAnonymous": true
+  },
+  {
+    "uniqueId": "ws1-kpi-quality-value",
+    "serverUrl": "node-red",
+    "serverPort": 4840,
+    "pathToService": "",
+    "nodeInformation": "ns=2;s=WS1.KPI.Quality.Value",
+    "allowAnonymous": true
+  },
+  {
+    "uniqueId": "ws1-kpi-quality-goodunits",
+    "serverUrl": "node-red",
+    "serverPort": 4840,
+    "pathToService": "",
+    "nodeInformation": "ns=2;s=WS1.KPI.Quality.GoodUnits",
+    "allowAnonymous": true
+  },
+  {
+    "uniqueId": "ws1-kpi-quality-defectiveunits",
+    "serverUrl": "node-red",
+    "serverPort": 4840,
+    "pathToService": "",
+    "nodeInformation": "ns=2;s=WS1.KPI.Quality.DefectiveUnits",
+    "allowAnonymous": true
+  },
+  {
+    "uniqueId": "ws1-kpi-quality-lastupdated",
+    "serverUrl": "node-red",
+    "serverPort": 4840,
+    "pathToService": "",
+    "nodeInformation": "ns=2;s=WS1.KPI.Quality.LastUpdated",
+    "allowAnonymous": true
+  },
+  {
+    "uniqueId": "ws1-kpi-oee-value",
+    "serverUrl": "node-red",
+    "serverPort": 4840,
+    "pathToService": "",
+    "nodeInformation": "ns=2;s=WS1.KPI.OEE.Value",
+    "allowAnonymous": true
+  },
+  {
+    "uniqueId": "ws1-kpi-oee-calculationperiodstart",
+    "serverUrl": "node-red",
+    "serverPort": 4840,
+    "pathToService": "",
+    "nodeInformation": "ns=2;s=WS1.KPI.OEE.CalculationPeriodStart",
+    "allowAnonymous": true
+  },
+  {
+    "uniqueId": "ws1-kpi-oee-calculationperiodend",
+    "serverUrl": "node-red",
+    "serverPort": 4840,
+    "pathToService": "",
+    "nodeInformation": "ns=2;s=WS1.KPI.OEE.CalculationPeriodEnd",
+    "allowAnonymous": true
+  },
+  {
+    "uniqueId": "ws1-kpi-oee-lastupdated",
+    "serverUrl": "node-red",
+    "serverPort": 4840,
+    "pathToService": "",
+    "nodeInformation": "ns=2;s=WS1.KPI.OEE.LastUpdated",
+    "allowAnonymous": true
+  },
+  {
+    "uniqueId": "ws2-aas-state",
+    "serverUrl": "node-red",
+    "serverPort": 4840,
+    "pathToService": "",
+    "nodeInformation": "ns=2;s=WS2.OperationalData.CurrentState",
+    "allowAnonymous": true
+  },
+  {
+    "uniqueId": "ws2-aas-workorder-id",
+    "serverUrl": "node-red",
+    "serverPort": 4840,
+    "pathToService": "",
+    "nodeInformation": "ns=2;s=WS2.OperationalData.ActiveWorkOrderId",
+    "allowAnonymous": true
+  },
+  {
+    "uniqueId": "ws2-aas-mo-id",
+    "serverUrl": "node-red",
+    "serverPort": 4840,
+    "pathToService": "",
+    "nodeInformation": "ns=2;s=WS2.OperationalData.ActiveManufacturingOrderId",
+    "allowAnonymous": true
+  },
+  {
+    "uniqueId": "ws2-aas-pause-reason",
+    "serverUrl": "node-red",
+    "serverPort": 4840,
+    "pathToService": "",
+    "nodeInformation": "ns=2;s=WS2.OperationalData.PauseReason",
+    "allowAnonymous": true
+  },
+  {
+    "uniqueId": "ws2-aas-pause-reason-type",
+    "serverUrl": "node-red",
+    "serverPort": 4840,
+    "pathToService": "",
+    "nodeInformation": "ns=2;s=WS2.OperationalData.PauseReasonType",
+    "allowAnonymous": true
+  },
+  {
+    "uniqueId": "ws2-leftwheel",
+    "serverUrl": "node-red",
+    "serverPort": 4840,
+    "pathToService": "",
+    "nodeInformation": "ns=2;s=WS2.RobotData.LeftWheelVelocitySTR",
+    "allowAnonymous": true
+  },
+  {
+    "uniqueId": "ws2-rightwheel",
+    "serverUrl": "node-red",
+    "serverPort": 4840,
+    "pathToService": "",
+    "nodeInformation": "ns=2;s=WS2.RobotData.RightWheelVelocitySTR",
+    "allowAnonymous": true
+  },
+  {
+    "uniqueId": "ws2-kpi-availability-value",
+    "serverUrl": "node-red",
+    "serverPort": 4840,
+    "pathToService": "",
+    "nodeInformation": "ns=2;s=WS2.KPI.Availability.Value",
+    "allowAnonymous": true
+  },
+  {
+    "uniqueId": "ws2-kpi-availability-plannedproductiontime",
+    "serverUrl": "node-red",
+    "serverPort": 4840,
+    "pathToService": "",
+    "nodeInformation": "ns=2;s=WS2.KPI.Availability.PlannedProductionTime",
+    "allowAnonymous": true
+  },
+  {
+    "uniqueId": "ws2-kpi-availability-actualproductiontime",
+    "serverUrl": "node-red",
+    "serverPort": 4840,
+    "pathToService": "",
+    "nodeInformation": "ns=2;s=WS2.KPI.Availability.ActualProductionTime",
+    "allowAnonymous": true
+  },
+  {
+    "uniqueId": "ws2-kpi-availability-lastupdated",
+    "serverUrl": "node-red",
+    "serverPort": 4840,
+    "pathToService": "",
+    "nodeInformation": "ns=2;s=WS2.KPI.Availability.LastUpdated",
+    "allowAnonymous": true
+  },
+  {
+    "uniqueId": "ws2-kpi-performance-value",
+    "serverUrl": "node-red",
+    "serverPort": 4840,
+    "pathToService": "",
+    "nodeInformation": "ns=2;s=WS2.KPI.Performance.Value",
+    "allowAnonymous": true
+  },
+  {
+    "uniqueId": "ws2-kpi-performance-idealcycletime",
+    "serverUrl": "node-red",
+    "serverPort": 4840,
+    "pathToService": "",
+    "nodeInformation": "ns=2;s=WS2.KPI.Performance.IdealCycleTime",
+    "allowAnonymous": true
+  },
+  {
+    "uniqueId": "ws2-kpi-performance-actualcycletime",
+    "serverUrl": "node-red",
+    "serverPort": 4840,
+    "pathToService": "",
+    "nodeInformation": "ns=2;s=WS2.KPI.Performance.ActualCycleTime",
+    "allowAnonymous": true
+  },
+  {
+    "uniqueId": "ws2-kpi-performance-totalunitsproduced",
+    "serverUrl": "node-red",
+    "serverPort": 4840,
+    "pathToService": "",
+    "nodeInformation": "ns=2;s=WS2.KPI.Performance.TotalUnitsProduced",
+    "allowAnonymous": true
+  },
+  {
+    "uniqueId": "ws2-kpi-performance-lastupdated",
+    "serverUrl": "node-red",
+    "serverPort": 4840,
+    "pathToService": "",
+    "nodeInformation": "ns=2;s=WS2.KPI.Performance.LastUpdated",
+    "allowAnonymous": true
+  },
+  {
+    "uniqueId": "ws2-kpi-quality-value",
+    "serverUrl": "node-red",
+    "serverPort": 4840,
+    "pathToService": "",
+    "nodeInformation": "ns=2;s=WS2.KPI.Quality.Value",
+    "allowAnonymous": true
+  },
+  {
+    "uniqueId": "ws2-kpi-quality-goodunits",
+    "serverUrl": "node-red",
+    "serverPort": 4840,
+    "pathToService": "",
+    "nodeInformation": "ns=2;s=WS2.KPI.Quality.GoodUnits",
+    "allowAnonymous": true
+  },
+  {
+    "uniqueId": "ws2-kpi-quality-defectiveunits",
+    "serverUrl": "node-red",
+    "serverPort": 4840,
+    "pathToService": "",
+    "nodeInformation": "ns=2;s=WS2.KPI.Quality.DefectiveUnits",
+    "allowAnonymous": true
+  },
+  {
+    "uniqueId": "ws2-kpi-quality-lastupdated",
+    "serverUrl": "node-red",
+    "serverPort": 4840,
+    "pathToService": "",
+    "nodeInformation": "ns=2;s=WS2.KPI.Quality.LastUpdated",
+    "allowAnonymous": true
+  },
+  {
+    "uniqueId": "ws2-kpi-oee-value",
+    "serverUrl": "node-red",
+    "serverPort": 4840,
+    "pathToService": "",
+    "nodeInformation": "ns=2;s=WS2.KPI.OEE.Value",
+    "allowAnonymous": true
+  },
+  {
+    "uniqueId": "ws2-kpi-oee-calculationperiodstart",
+    "serverUrl": "node-red",
+    "serverPort": 4840,
+    "pathToService": "",
+    "nodeInformation": "ns=2;s=WS2.KPI.OEE.CalculationPeriodStart",
+    "allowAnonymous": true
+  },
+  {
+    "uniqueId": "ws2-kpi-oee-calculationperiodend",
+    "serverUrl": "node-red",
+    "serverPort": 4840,
+    "pathToService": "",
+    "nodeInformation": "ns=2;s=WS2.KPI.OEE.CalculationPeriodEnd",
+    "allowAnonymous": true
+  },
+  {
+    "uniqueId": "ws2-kpi-oee-lastupdated",
+    "serverUrl": "node-red",
+    "serverPort": 4840,
+    "pathToService": "",
+    "nodeInformation": "ns=2;s=WS2.KPI.OEE.LastUpdated",
+    "allowAnonymous": true
+  },
+  {
+    "uniqueId": "ws3-aas-state",
+    "serverUrl": "node-red",
+    "serverPort": 4840,
+    "pathToService": "",
+    "nodeInformation": "ns=2;s=WS3.OperationalData.CurrentState",
+    "allowAnonymous": true
+  },
+  {
+    "uniqueId": "ws3-aas-workorder-id",
+    "serverUrl": "node-red",
+    "serverPort": 4840,
+    "pathToService": "",
+    "nodeInformation": "ns=2;s=WS3.OperationalData.ActiveWorkOrderId",
+    "allowAnonymous": true
+  },
+  {
+    "uniqueId": "ws3-aas-mo-id",
+    "serverUrl": "node-red",
+    "serverPort": 4840,
+    "pathToService": "",
+    "nodeInformation": "ns=2;s=WS3.OperationalData.ActiveManufacturingOrderId",
+    "allowAnonymous": true
+  },
+  {
+    "uniqueId": "ws3-aas-pause-reason",
+    "serverUrl": "node-red",
+    "serverPort": 4840,
+    "pathToService": "",
+    "nodeInformation": "ns=2;s=WS3.OperationalData.PauseReason",
+    "allowAnonymous": true
+  },
+  {
+    "uniqueId": "ws3-aas-pause-reason-type",
+    "serverUrl": "node-red",
+    "serverPort": 4840,
+    "pathToService": "",
+    "nodeInformation": "ns=2;s=WS3.OperationalData.PauseReasonType",
+    "allowAnonymous": true
+  },
+  {
+    "uniqueId": "ws3-kpi-availability-value",
+    "serverUrl": "node-red",
+    "serverPort": 4840,
+    "pathToService": "",
+    "nodeInformation": "ns=2;s=WS3.KPI.Availability.Value",
+    "allowAnonymous": true
+  },
+  {
+    "uniqueId": "ws3-kpi-availability-plannedproductiontime",
+    "serverUrl": "node-red",
+    "serverPort": 4840,
+    "pathToService": "",
+    "nodeInformation": "ns=2;s=WS3.KPI.Availability.PlannedProductionTime",
+    "allowAnonymous": true
+  },
+  {
+    "uniqueId": "ws3-kpi-availability-actualproductiontime",
+    "serverUrl": "node-red",
+    "serverPort": 4840,
+    "pathToService": "",
+    "nodeInformation": "ns=2;s=WS3.KPI.Availability.ActualProductionTime",
+    "allowAnonymous": true
+  },
+  {
+    "uniqueId": "ws3-kpi-availability-lastupdated",
+    "serverUrl": "node-red",
+    "serverPort": 4840,
+    "pathToService": "",
+    "nodeInformation": "ns=2;s=WS3.KPI.Availability.LastUpdated",
+    "allowAnonymous": true
+  },
+  {
+    "uniqueId": "ws3-kpi-performance-value",
+    "serverUrl": "node-red",
+    "serverPort": 4840,
+    "pathToService": "",
+    "nodeInformation": "ns=2;s=WS3.KPI.Performance.Value",
+    "allowAnonymous": true
+  },
+  {
+    "uniqueId": "ws3-kpi-performance-idealcycletime",
+    "serverUrl": "node-red",
+    "serverPort": 4840,
+    "pathToService": "",
+    "nodeInformation": "ns=2;s=WS3.KPI.Performance.IdealCycleTime",
+    "allowAnonymous": true
+  },
+  {
+    "uniqueId": "ws3-kpi-performance-actualcycletime",
+    "serverUrl": "node-red",
+    "serverPort": 4840,
+    "pathToService": "",
+    "nodeInformation": "ns=2;s=WS3.KPI.Performance.ActualCycleTime",
+    "allowAnonymous": true
+  },
+  {
+    "uniqueId": "ws3-kpi-performance-totalunitsproduced",
+    "serverUrl": "node-red",
+    "serverPort": 4840,
+    "pathToService": "",
+    "nodeInformation": "ns=2;s=WS3.KPI.Performance.TotalUnitsProduced",
+    "allowAnonymous": true
+  },
+  {
+    "uniqueId": "ws3-kpi-performance-lastupdated",
+    "serverUrl": "node-red",
+    "serverPort": 4840,
+    "pathToService": "",
+    "nodeInformation": "ns=2;s=WS3.KPI.Performance.LastUpdated",
+    "allowAnonymous": true
+  },
+  {
+    "uniqueId": "ws3-kpi-quality-value",
+    "serverUrl": "node-red",
+    "serverPort": 4840,
+    "pathToService": "",
+    "nodeInformation": "ns=2;s=WS3.KPI.Quality.Value",
+    "allowAnonymous": true
+  },
+  {
+    "uniqueId": "ws3-kpi-quality-goodunits",
+    "serverUrl": "node-red",
+    "serverPort": 4840,
+    "pathToService": "",
+    "nodeInformation": "ns=2;s=WS3.KPI.Quality.GoodUnits",
+    "allowAnonymous": true
+  },
+  {
+    "uniqueId": "ws3-kpi-quality-defectiveunits",
+    "serverUrl": "node-red",
+    "serverPort": 4840,
+    "pathToService": "",
+    "nodeInformation": "ns=2;s=WS3.KPI.Quality.DefectiveUnits",
+    "allowAnonymous": true
+  },
+  {
+    "uniqueId": "ws3-kpi-quality-lastupdated",
+    "serverUrl": "node-red",
+    "serverPort": 4840,
+    "pathToService": "",
+    "nodeInformation": "ns=2;s=WS3.KPI.Quality.LastUpdated",
+    "allowAnonymous": true
+  },
+  {
+    "uniqueId": "ws3-kpi-oee-value",
+    "serverUrl": "node-red",
+    "serverPort": 4840,
+    "pathToService": "",
+    "nodeInformation": "ns=2;s=WS3.KPI.OEE.Value",
+    "allowAnonymous": true
+  },
+  {
+    "uniqueId": "ws3-kpi-oee-calculationperiodstart",
+    "serverUrl": "node-red",
+    "serverPort": 4840,
+    "pathToService": "",
+    "nodeInformation": "ns=2;s=WS3.KPI.OEE.CalculationPeriodStart",
+    "allowAnonymous": true
+  },
+  {
+    "uniqueId": "ws3-kpi-oee-calculationperiodend",
+    "serverUrl": "node-red",
+    "serverPort": 4840,
+    "pathToService": "",
+    "nodeInformation": "ns=2;s=WS3.KPI.OEE.CalculationPeriodEnd",
+    "allowAnonymous": true
+  },
+  {
+    "uniqueId": "ws3-kpi-oee-lastupdated",
+    "serverUrl": "node-red",
+    "serverPort": 4840,
+    "pathToService": "",
+    "nodeInformation": "ns=2;s=WS3.KPI.OEE.LastUpdated",
+    "allowAnonymous": true
+  },
+  {
+    "uniqueId": "ws4-aas-state",
+    "serverUrl": "node-red",
+    "serverPort": 4840,
+    "pathToService": "",
+    "nodeInformation": "ns=2;s=WS4.OperationalData.CurrentState",
+    "allowAnonymous": true
+  },
+  {
+    "uniqueId": "ws4-aas-workorder-id",
+    "serverUrl": "node-red",
+    "serverPort": 4840,
+    "pathToService": "",
+    "nodeInformation": "ns=2;s=WS4.OperationalData.ActiveWorkOrderId",
+    "allowAnonymous": true
+  },
+  {
+    "uniqueId": "ws4-aas-mo-id",
+    "serverUrl": "node-red",
+    "serverPort": 4840,
+    "pathToService": "",
+    "nodeInformation": "ns=2;s=WS4.OperationalData.ActiveManufacturingOrderId",
+    "allowAnonymous": true
+  },
+  {
+    "uniqueId": "ws4-aas-pause-reason",
+    "serverUrl": "node-red",
+    "serverPort": 4840,
+    "pathToService": "",
+    "nodeInformation": "ns=2;s=WS4.OperationalData.PauseReason",
+    "allowAnonymous": true
+  },
+  {
+    "uniqueId": "ws4-aas-pause-reason-type",
+    "serverUrl": "node-red",
+    "serverPort": 4840,
+    "pathToService": "",
+    "nodeInformation": "ns=2;s=WS4.OperationalData.PauseReasonType",
+    "allowAnonymous": true
+  },
+  {
+    "uniqueId": "ws4-kpi-availability-value",
+    "serverUrl": "node-red",
+    "serverPort": 4840,
+    "pathToService": "",
+    "nodeInformation": "ns=2;s=WS4.KPI.Availability.Value",
+    "allowAnonymous": true
+  },
+  {
+    "uniqueId": "ws4-kpi-availability-plannedproductiontime",
+    "serverUrl": "node-red",
+    "serverPort": 4840,
+    "pathToService": "",
+    "nodeInformation": "ns=2;s=WS4.KPI.Availability.PlannedProductionTime",
+    "allowAnonymous": true
+  },
+  {
+    "uniqueId": "ws4-kpi-availability-actualproductiontime",
+    "serverUrl": "node-red",
+    "serverPort": 4840,
+    "pathToService": "",
+    "nodeInformation": "ns=2;s=WS4.KPI.Availability.ActualProductionTime",
+    "allowAnonymous": true
+  },
+  {
+    "uniqueId": "ws4-kpi-availability-lastupdated",
+    "serverUrl": "node-red",
+    "serverPort": 4840,
+    "pathToService": "",
+    "nodeInformation": "ns=2;s=WS4.KPI.Availability.LastUpdated",
+    "allowAnonymous": true
+  },
+  {
+    "uniqueId": "ws4-kpi-performance-value",
+    "serverUrl": "node-red",
+    "serverPort": 4840,
+    "pathToService": "",
+    "nodeInformation": "ns=2;s=WS4.KPI.Performance.Value",
+    "allowAnonymous": true
+  },
+  {
+    "uniqueId": "ws4-kpi-performance-idealcycletime",
+    "serverUrl": "node-red",
+    "serverPort": 4840,
+    "pathToService": "",
+    "nodeInformation": "ns=2;s=WS4.KPI.Performance.IdealCycleTime",
+    "allowAnonymous": true
+  },
+  {
+    "uniqueId": "ws4-kpi-performance-actualcycletime",
+    "serverUrl": "node-red",
+    "serverPort": 4840,
+    "pathToService": "",
+    "nodeInformation": "ns=2;s=WS4.KPI.Performance.ActualCycleTime",
+    "allowAnonymous": true
+  },
+  {
+    "uniqueId": "ws4-kpi-performance-totalunitsproduced",
+    "serverUrl": "node-red",
+    "serverPort": 4840,
+    "pathToService": "",
+    "nodeInformation": "ns=2;s=WS4.KPI.Performance.TotalUnitsProduced",
+    "allowAnonymous": true
+  },
+  {
+    "uniqueId": "ws4-kpi-performance-lastupdated",
+    "serverUrl": "node-red",
+    "serverPort": 4840,
+    "pathToService": "",
+    "nodeInformation": "ns=2;s=WS4.KPI.Performance.LastUpdated",
+    "allowAnonymous": true
+  },
+  {
+    "uniqueId": "ws4-kpi-quality-value",
+    "serverUrl": "node-red",
+    "serverPort": 4840,
+    "pathToService": "",
+    "nodeInformation": "ns=2;s=WS4.KPI.Quality.Value",
+    "allowAnonymous": true
+  },
+  {
+    "uniqueId": "ws4-kpi-quality-goodunits",
+    "serverUrl": "node-red",
+    "serverPort": 4840,
+    "pathToService": "",
+    "nodeInformation": "ns=2;s=WS4.KPI.Quality.GoodUnits",
+    "allowAnonymous": true
+  },
+  {
+    "uniqueId": "ws4-kpi-quality-defectiveunits",
+    "serverUrl": "node-red",
+    "serverPort": 4840,
+    "pathToService": "",
+    "nodeInformation": "ns=2;s=WS4.KPI.Quality.DefectiveUnits",
+    "allowAnonymous": true
+  },
+  {
+    "uniqueId": "ws4-kpi-quality-lastupdated",
+    "serverUrl": "node-red",
+    "serverPort": 4840,
+    "pathToService": "",
+    "nodeInformation": "ns=2;s=WS4.KPI.Quality.LastUpdated",
+    "allowAnonymous": true
+  },
+  {
+    "uniqueId": "ws4-kpi-oee-value",
+    "serverUrl": "node-red",
+    "serverPort": 4840,
+    "pathToService": "",
+    "nodeInformation": "ns=2;s=WS4.KPI.OEE.Value",
+    "allowAnonymous": true
+  },
+  {
+    "uniqueId": "ws4-kpi-oee-calculationperiodstart",
+    "serverUrl": "node-red",
+    "serverPort": 4840,
+    "pathToService": "",
+    "nodeInformation": "ns=2;s=WS4.KPI.OEE.CalculationPeriodStart",
+    "allowAnonymous": true
+  },
+  {
+    "uniqueId": "ws4-kpi-oee-calculationperiodend",
+    "serverUrl": "node-red",
+    "serverPort": 4840,
+    "pathToService": "",
+    "nodeInformation": "ns=2;s=WS4.KPI.OEE.CalculationPeriodEnd",
+    "allowAnonymous": true
+  },
+  {
+    "uniqueId": "ws4-kpi-oee-lastupdated",
+    "serverUrl": "node-red",
+    "serverPort": 4840,
+    "pathToService": "",
+    "nodeInformation": "ns=2;s=WS4.KPI.OEE.LastUpdated",
+    "allowAnonymous": true
+  }
+]

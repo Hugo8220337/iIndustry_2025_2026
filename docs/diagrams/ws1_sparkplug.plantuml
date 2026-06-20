@@ -1,0 +1,62 @@
+@startuml "workflow Sparkplug B - WS1_PreExpansao"
+skinparam BoxPadding 10
+skinparam ParticipantPadding 10
+
+' title Estação 1 - Pré-Expansão (Workflow Sparkplug B)
+
+box "Chão de Fábrica" 
+actor "Operador (HMI)" as Op
+participant "Arduino GIGA" as Arduino
+end box
+
+box "Edge Gateway"
+participant "Node-RED" as NR
+end box
+
+box "Sistemas de Gestão" #White
+participant "Odoo" as Odoo
+database "CrateDB" as Crate
+end box
+
+== DCMD: Atribuição da Ordem de Trabalho ==
+
+Odoo -> NR: Nova Ordem gerada
+activate NR
+NR -> NR: Formata payload (ASSIGN_WORKORDER)
+NR -> Arduino: MQTT Publish [DCMD]\n<b>Tópico:</b> spBv1.0/ESTG_Fabrica/DCMD/node_red_edge/WS1_PreExpansao\n<b>Payload:</b> ASSIGN_WORKORDER (WorkOrder/Id, ManufacturingOrder/Id)
+activate Arduino
+Arduino -> Arduino: Guarda dados na memória
+Arduino -> Op: Mostra nova WorkOrder
+deactivate Arduino
+deactivate NR
+
+== DDATA: Atualização estado da Ordem de Trabalho ==
+
+Op -> Arduino: Pressiona Botão (Start / Pause / Stop)
+activate Arduino
+
+Arduino -> NR: MQTT Publish [DDATA]\n<b>Tópico:</b> spBv1.0/ESTG_Fabrica/DDATA/node_red_edge/WS1_PreExpansao\n<b>Payload:</b> Event/Type (Start/Pause/Stop), WorkOrder/Id, (PauseReason)
+activate NR
+
+NR -> Odoo: XML-RPC API Call (Validar estado)
+activate Odoo
+Odoo --> NR: Confirmação
+deactivate Odoo
+
+NR -> Crate: INSERT INTO factory_events (...)
+activate Crate
+Crate --> NR: Registo gravado
+deactivate Crate
+
+alt Sucesso na Persistência e Odoo
+    NR -> Arduino: MQTT Publish [DCMD]\n<b>Tópico:</b> spBv1.0/ESTG_Fabrica/DCMD/node_red_edge/WS1_PreExpansao\n<b>Payload:</b> Machine/Ack = "200"
+    Arduino -> Op: Atualiza display (CONFIRMADO)
+else Falha
+    NR -> Arduino: MQTT Publish [DCMD]\n<b>Tópico:</b> spBv1.0/ESTG_Fabrica/DCMD/node_red_edge/WS1_PreExpansao\n<b>Payload:</b> Machine/Ack = "400"
+    deactivate NR
+    Arduino -> Op: Reverte display (ERRO)
+end
+deactivate NR
+deactivate Arduino
+
+@enduml

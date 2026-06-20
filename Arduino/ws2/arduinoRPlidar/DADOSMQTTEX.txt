@@ -1,0 +1,23 @@
+<MET,status,velocidadeRodaEsq,velocidadeRodaDireita,seDetetaObstaculo,workstation>
+
+<MET,0,0,0,0,nenhuma>          → Aguardar CMD:START
+<MET,1,20,20,0,nenhuma>        → Seguir linha, vel 20/20, sem obstáculo
+<MET,1,25,15,0,nenhuma>        → Seguir linha em curva, corrigindo direita
+<MET,1,15,25,0,nenhuma>        → Seguir linha em curva, corrigindo esquerda
+<MET,2,0,0,1,nenhuma>          → Desviar início, obstáculo detetado
+<MET,3,15,15,1,nenhuma>        → Contornar obstáculo 
+<MET,4,0,0,0,nenhuma>          → Reentrar, virar para procurar linha
+<MET,4,10,10,0,nenhuma>        → Procurar linha Azul
+<MET,5,0,0,0,nenhuma>          -> encontrou linha
+<MET,6,0,0,0,2> → Chegou a WS2 (vermelho) ou a WS3_Modelagem
+<MET,7,0,0,0,1> → Chegou a WS1 (amarelo)
+
+CódigoEstadoSignificado
+0 PARADO parado
+1 START Começa o movimento
+2 DETETADO A virar para evitar obstáculo
+3 CONTORNAR A desviar de obstaculo
+4 NOLINE a procurar a linha
+5 FOUNDLINE encontrou a linha
+6 WS_CHEGADA Chegou a workstation 
+7 END terminou o movimento

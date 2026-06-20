@@ -1,0 +1,8 @@
+[
+    {
+        "uniqueId": "opcua-value-extractor",
+        "queryPath": "expression.jsonata",
+        "inputType": "JsonString",
+        "outputType": "JsonString"
+    }
+]

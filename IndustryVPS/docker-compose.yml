@@ -1,0 +1,219 @@
+services:
+  node-red:
+    image: nodered/node-red:latest
+    environment:
+      - TZ=Europe/Amsterdam
+    ports:
+      - "1880:1880"
+      - "4840:4840"
+    volumes:
+      - node-red-data:/data
+    networks:
+      - industry
+
+  mosquitto:
+    image: eclipse-mosquitto:2.0.15
+    container_name: mosquitto
+    ports:
+      - '1883:1883'
+    volumes:
+      - ./mosquitto/config:/mosquitto/config
+      - ./mosquitto/data:/mosquitto/data
+      - ./mosquitto/log:/mosquitto/log
+    networks:
+      - industry
+    restart: always
+    healthcheck:
+      test:
+        - CMD-SHELL
+        - mosquitto_sub -p 1883 -t 'topic' -C 1 -E -i probe -W 3
+      interval: 5s
+      timeout: 10s
+      start_period: 1s
+      retries: 3
+
+  odoo:
+    image: odoo:latest
+    depends_on:
+      - mydb
+    ports:
+      - "8069:8069"
+    environment:
+      - HOST=mydb
+      - USER=odoo
+      - PASSWORD=myodoo
+    volumes:
+      - ./extra-addons:/mnt/extra-addons:z
+      - ./etc:/etc/odoo:z
+    networks:
+      - industry
+
+  mydb:
+    image: postgres:15
+    environment:
+      - POSTGRES_DB=postgres
+      - POSTGRES_PASSWORD=myodoo
+      - POSTGRES_USER=odoo
+    ports:
+      - "5433:5432"
+    volumes:
+      - ./pgdata:/var/lib/postgresql/data
+    networks:
+      - industry
+
+  cratedb:
+    image: crate:latest
+    ports:
+      - "4200:4200"
+      - "5434:5432"
+    volumes:
+      - cratedb-data:/data
+    networks:
+      - industry
+    command: ["crate", "-Cdiscovery.type=single-node"]
+
+  aas-env:
+    image: eclipsebasyx/aas-environment:2.0.0-SNAPSHOT
+    container_name: aas-env
+    environment:
+      - SERVER_PORT=8081
+    volumes:
+      - ./aas:/application/aas
+      - ./basyx/aas-env.properties:/application/application.properties
+    ports:
+      - '8081:8081'
+    restart: always
+    depends_on:
+      aas-registry:
+        condition: service_started
+      sm-registry:
+        condition: service_started
+      mosquitto:
+        condition: service_healthy
+    networks:
+      - industry
+
+
+  aas-registry:
+    image: eclipsebasyx/aas-registry-log-mem:2.0.0-SNAPSHOT
+    container_name: aas-registry
+    ports:
+      - '8082:8080'
+    environment:
+      - SERVER_PORT=8080
+    volumes:
+      - ./basyx/aas-registry.yml:/workspace/config/application.yml
+    networks:
+      - industry
+    restart: always
+
+  sm-registry:
+    image: eclipsebasyx/submodel-registry-log-mem:2.0.0-SNAPSHOT
+    container_name: sm-registry
+    ports:
+      - '8083:8080'
+    environment:
+      - SERVER_PORT=8080
+    networks:
+      - industry
+    volumes:
+      - ./basyx/sm-registry.yml:/workspace/config/application.yml
+    restart: always
+
+  aas-discovery:
+    image: eclipsebasyx/aas-discovery:2.0.0-SNAPSHOT
+    container_name: aas-discovery
+    environment:
+      - SERVER_PORT=8081
+    networks:
+      - industry
+    # volumes:
+    #   - ./basyx/aas-discovery.properties:/application/application.properties
+    ports:
+      - '8084:8081'
+    restart: always
+
+  aas-web-ui:
+    image: eclipsebasyx/aas-gui:SNAPSHOT
+    container_name: aas-ui
+    ports:
+      - '3000:3000'
+    environment:
+      AAS_REGISTRY_PATH: http://158.179.220.228:8082/shell-descriptors
+      SUBMODEL_REGISTRY_PATH: http://158.179.220.228:8083/submodel-descriptors
+      AAS_REPO_PATH: http://158.179.220.228:8081/shells
+      SUBMODEL_REPO_PATH: http://158.179.220.228:8081/submodels
+      CD_REPO_PATH: http://158.179.220.228:8081/concept-descriptions
+      AAS_DISCOVERY_PATH: http://158.179.220.228:8084/lookup/shells
+      DASHBOARD_SERVICE_PATH: http://158.179.220.228:8085/api/elements
+    restart: always
+    networks:
+      - industry
+    depends_on:
+      aas-env:
+        condition: service_started
+
+  dashboard-api:
+    image: aaronzi/basyx-dashboard-api:SNAPSHOT_02
+    container_name: dashboard-api
+    ports:
+      - '8085:8085'
+    volumes:
+      - ./basyx/aas-dashboard.yml:/application.yml
+    restart: always
+    networks:
+      - industry
+    depends_on:
+      mongo:
+        condition: service_healthy
+
+  mongo:
+    image: mongo:5.0.10
+    container_name: mongo
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: mongoAdmin
+      MONGO_INITDB_ROOT_PASSWORD: mongoPassword
+    restart: always
+    networks:
+      - industry
+    healthcheck:
+      test: mongo
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  grafana:
+    image: grafana/grafana:latest
+    container_name: grafana
+    ports:
+      - "3001:3000"
+    volumes:
+      - grafana-data:/var/lib/grafana
+    networks:
+      - industry
+    restart: always
+
+  databridge:
+    image: eclipsebasyx/databridge:1.0.0-milestone-08
+    container_name: databridge
+    volumes:
+      - ./basyx/databridge:/usr/share/config
+    networks:
+      - industry
+    environment:
+      - LOGGING_LEVEL_ORG_ECLIPSE_DIGITALTWIN=DEBUG
+      - LOGGING_LEVEL_ORG_APACHE_CAMEL=DEBUG
+    restart: always
+    depends_on:
+      aas-env:
+        condition: service_started
+
+networks:
+  industry:
+    driver: bridge
+
+
+volumes:
+  node-red-data:
+  cratedb-data:
+  grafana-data:

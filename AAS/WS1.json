@@ -1,0 +1,546 @@
+{
+  "assetAdministrationShells": [
+    {
+      "idShort": "WS1",
+      "id": "Workstation_WS1",
+      "assetInformation": {
+        "assetKind": "Instance",
+        "globalAssetId": "urn:estg:factory:WS1"
+      },
+      "submodels": [
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "Workstation_WS1_Nameplate"
+            }
+          ]
+        },
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "Workstation_WS1_OperationalData"
+            }
+          ]
+        },
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "Workstation_WS1_KPI"
+            }
+          ]
+        }
+      ],
+      "modelType": "AssetAdministrationShell"
+    }
+  ],
+  "submodels": [
+    {
+      "idShort": "KPI",
+      "id": "Workstation_WS1_KPI",
+      "kind": "Instance",
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [
+          {
+            "type": "GlobalReference",
+            "value": "https://admin-shell.io/idta/SubmodelTemplate/KeyPerformanceIndicators/1/0"
+          }
+        ]
+      },
+      "submodelElements": [
+        {
+          "idShort": "Availability",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://www.iso.org/obp/ui/#iso:std:iso:22400:-2:ed-1:v1:en/Availability"
+              }
+            ]
+          },
+          "value": [
+            {
+              "idShort": "Value",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Availability ratio per ISO 22400-2 (0-1)"
+                }
+              ],
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://www.iso.org/obp/ui/#iso:std:iso:22400:-2:ed-1:v1:en/Availability/Value"
+                  }
+                ]
+              },
+              "valueType": "xs:string",
+              "value": "",
+              "modelType": "Property"
+            },
+            {
+              "idShort": "Unit",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://admin-shell.io/idta/Common/Unit/1/0"
+                  }
+                ]
+              },
+              "valueType": "xs:string",
+              "value": "ratio",
+              "modelType": "Property"
+            },
+            {
+              "idShort": "PlannedProductionTime",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Planned Busy Time in seconds (ISO 22400-2 PBT)"
+                }
+              ],
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://www.iso.org/obp/ui/#iso:std:iso:22400:-2:ed-1:v1:en/PlannedBusyTime"
+                  }
+                ]
+              },
+              "valueType": "xs:string",
+              "value": "",
+              "modelType": "Property"
+            },
+            {
+              "idShort": "ActualProductionTime",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Actual Unit Busy Time in seconds (ISO 22400-2 AUBT)"
+                }
+              ],
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://www.iso.org/obp/ui/#iso:std:iso:22400:-2:ed-1:v1:en/ActualUnitBusyTime"
+                  }
+                ]
+              },
+              "valueType": "xs:string",
+              "value": "",
+              "modelType": "Property"
+            },
+            {
+              "idShort": "LastUpdated",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://admin-shell.io/idta/Common/LastUpdate/1/0"
+                  }
+                ]
+              },
+              "valueType": "xs:string",
+              "value": "",
+              "modelType": "Property"
+            }
+          ],
+          "modelType": "SubmodelElementCollection"
+        },
+        {
+          "idShort": "Performance",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://www.iso.org/obp/ui/#iso:std:iso:22400:-2:ed-1:v1:en/Effectiveness"
+              }
+            ]
+          },
+          "value": [
+            {
+              "idShort": "Value",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Performance ratio per ISO 22400-2 (0-1)"
+                }
+              ],
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://www.iso.org/obp/ui/#iso:std:iso:22400:-2:ed-1:v1:en/Effectiveness/Value"
+                  }
+                ]
+              },
+              "valueType": "xs:string",
+              "value": "",
+              "modelType": "Property"
+            },
+            {
+              "idShort": "Unit",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://admin-shell.io/idta/Common/Unit/1/0"
+                  }
+                ]
+              },
+              "valueType": "xs:string",
+              "value": "ratio",
+              "modelType": "Property"
+            },
+            {
+              "idShort": "IdealCycleTime",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Planned Unit Cycle Time in seconds (ISO 22400-2 PUCT)"
+                }
+              ],
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://www.iso.org/obp/ui/#iso:std:iso:22400:-2:ed-1:v1:en/PlannedUnitCycleTime"
+                  }
+                ]
+              },
+              "valueType": "xs:string",
+              "value": "",
+              "modelType": "Property"
+            },
+            {
+              "idShort": "ActualCycleTime",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://www.iso.org/obp/ui/#iso:std:iso:22400:-2:ed-1:v1:en/ActualUnitProcessingTime"
+                  }
+                ]
+              },
+              "valueType": "xs:string",
+              "value": "",
+              "modelType": "Property"
+            },
+            {
+              "idShort": "TotalUnitsProduced",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://www.iso.org/obp/ui/#iso:std:iso:22400:-2:ed-1:v1:en/ProducedQuantity"
+                  }
+                ]
+              },
+              "valueType": "xs:string",
+              "value": "",
+              "modelType": "Property"
+            },
+            {
+              "idShort": "LastUpdated",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://admin-shell.io/idta/Common/LastUpdate/1/0"
+                  }
+                ]
+              },
+              "valueType": "xs:string",
+              "value": "",
+              "modelType": "Property"
+            }
+          ],
+          "modelType": "SubmodelElementCollection"
+        },
+        {
+          "idShort": "Quality",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://www.iso.org/obp/ui/#iso:std:iso:22400:-2:ed-1:v1:en/QualityRatio"
+              }
+            ]
+          },
+          "value": [
+            {
+              "idShort": "Value",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Quality ratio per ISO 22400-2 (0-1)"
+                }
+              ],
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://www.iso.org/obp/ui/#iso:std:iso:22400:-2:ed-1:v1:en/QualityRatio/Value"
+                  }
+                ]
+              },
+              "valueType": "xs:string",
+              "value": "",
+              "modelType": "Property"
+            },
+            {
+              "idShort": "Unit",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://admin-shell.io/idta/Common/Unit/1/0"
+                  }
+                ]
+              },
+              "valueType": "xs:string",
+              "value": "ratio",
+              "modelType": "Property"
+            },
+            {
+              "idShort": "GoodUnits",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://www.iso.org/obp/ui/#iso:std:iso:22400:-2:ed-1:v1:en/GoodQuantity"
+                  }
+                ]
+              },
+              "valueType": "xs:string",
+              "value": "",
+              "modelType": "Property"
+            },
+            {
+              "idShort": "DefectiveUnits",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://www.iso.org/obp/ui/#iso:std:iso:22400:-2:ed-1:v1:en/ScrapQuantity"
+                  }
+                ]
+              },
+              "valueType": "xs:string",
+              "value": "",
+              "modelType": "Property"
+            },
+            {
+              "idShort": "LastUpdated",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://admin-shell.io/idta/Common/LastUpdate/1/0"
+                  }
+                ]
+              },
+              "valueType": "xs:string",
+              "value": "",
+              "modelType": "Property"
+            }
+          ],
+          "modelType": "SubmodelElementCollection"
+        },
+        {
+          "idShort": "OEE",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://www.iso.org/obp/ui/#iso:std:iso:22400:-2:ed-1:v1:en/OEEIndex"
+              }
+            ]
+          },
+          "value": [
+            {
+              "idShort": "Value",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Overall Equipment Effectiveness = Availability × Performance × Quality (ISO 22400-2)"
+                }
+              ],
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://www.iso.org/obp/ui/#iso:std:iso:22400:-2:ed-1:v1:en/OEEIndex/Value"
+                  }
+                ]
+              },
+              "valueType": "xs:string",
+              "value": "",
+              "modelType": "Property"
+            },
+            {
+              "idShort": "Unit",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://admin-shell.io/idta/Common/Unit/1/0"
+                  }
+                ]
+              },
+              "valueType": "xs:string",
+              "value": "ratio",
+              "modelType": "Property"
+            },
+            {
+              "idShort": "CalculationPeriodStart",
+              "valueType": "xs:string",
+              "value": "",
+              "modelType": "Property"
+            },
+            {
+              "idShort": "CalculationPeriodEnd",
+              "valueType": "xs:string",
+              "value": "",
+              "modelType": "Property"
+            },
+            {
+              "idShort": "LastUpdated",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://admin-shell.io/idta/Common/LastUpdate/1/0"
+                  }
+                ]
+              },
+              "valueType": "xs:string",
+              "value": "",
+              "modelType": "Property"
+            }
+          ],
+          "modelType": "SubmodelElementCollection"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "idShort": "Nameplate",
+      "id": "Workstation_WS1_Nameplate",
+      "kind": "Instance",
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [
+          {
+            "type": "GlobalReference",
+            "value": "https://admin-shell.io/zvei/nameplate/2/0/Nameplate"
+          }
+        ]
+      },
+      "submodelElements": [
+        {
+          "idShort": "ManufacturerName",
+          "valueType": "xs:string",
+          "value": "ESTG",
+          "modelType": "Property"
+        },
+        {
+          "idShort": "WorkCenterName",
+          "valueType": "xs:string",
+          "value": "Pre-Expansao",
+          "modelType": "Property"
+        },
+        {
+          "idShort": "Operation",
+          "valueType": "xs:string",
+          "value": "Aquecimento",
+          "modelType": "Property"
+        },
+        {
+          "idShort": "Location",
+          "valueType": "xs:string",
+          "value": "Factory Floor",
+          "modelType": "Property"
+        },
+        {
+          "idShort": "DeviceId",
+          "valueType": "xs:string",
+          "value": "WS1",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "idShort": "OperationalData",
+      "id": "Workstation_WS1_OperationalData",
+      "kind": "Instance",
+      "submodelElements": [
+        {
+          "idShort": "ActiveWorkOrderId",
+          "valueType": "xs:string",
+          "value": "",
+          "modelType": "Property"
+        },
+        {
+          "idShort": "ActiveManufacturingOrderId",
+          "valueType": "xs:string",
+          "value": "",
+          "modelType": "Property"
+        },
+        {
+          "idShort": "PauseReason",
+          "valueType": "xs:string",
+          "value": "",
+          "modelType": "Property"
+        },
+        {
+          "idShort": "PauseReasonType",
+          "valueType": "xs:string",
+          "value": "",
+          "modelType": "Property"
+        },
+        {
+          "idShort": "CurrentState",
+          "valueType": "xs:string",
+          "value": "",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    }
+  ],
+  "conceptDescriptions": []
+}

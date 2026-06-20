@@ -1,0 +1,29 @@
+@startuml "Máquina de Estados de uma WorkStation"
+
+
+' title Máquina de Estados de uma WorkStation
+
+[*] --> Initializing
+
+Initializing --> Waiting : MQTT Connected
+Waiting --> Ready : DCMD: ASSIGN_WORKORDER
+Ready --> PENDING_START : Touch: Start
+Running --> PENDING_PAUSE : Touch: Pause
+Running --> PENDING_STOP : Touch: Stop
+
+state PENDING_START <<Pending>>
+state PENDING_PAUSE <<Pending>>
+state PENDING_STOP <<Pending>>
+
+PENDING_START --> Running : Ack == 200
+PENDING_START --> Ready : Ack != 200
+
+PENDING_PAUSE --> Paused : Ack == 200
+PENDING_PAUSE --> Running : Ack != 200 
+
+PENDING_STOP --> Stopped : Ack == 200
+PENDING_STOP --> Running : Ack != 200
+
+note bottom of PENDING_START : Enquanto PENDING, a interface\nfica bloqueada
+
+@enduml

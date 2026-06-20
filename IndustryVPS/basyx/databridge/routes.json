@@ -1,0 +1,1082 @@
+[
+    {
+        "routeId": "ws1-aas-state-route",
+        "datasource": "ws1-aas-state",
+        "transformers": [
+            "datavalue-to-json",
+            "opcua-value-extractor"
+        ],
+        "datasinks": [
+            "ws1-aas-state"
+        ],
+        "trigger": "event"
+    },
+    {
+        "routeId": "ws1-aas-workorder-id-route",
+        "datasource": "ws1-aas-workorder-id",
+        "transformers": [
+            "datavalue-to-json",
+            "opcua-value-extractor"
+        ],
+        "datasinks": [
+            "ws1-aas-workorder-id"
+        ],
+        "trigger": "event"
+    },
+    {
+        "routeId": "ws1-aas-mo-id-route",
+        "datasource": "ws1-aas-mo-id",
+        "transformers": [
+            "datavalue-to-json",
+            "opcua-value-extractor"
+        ],
+        "datasinks": [
+            "ws1-aas-mo-id"
+        ],
+        "trigger": "event"
+    },
+    {
+        "routeId": "ws1-aas-pause-reason-route",
+        "datasource": "ws1-aas-pause-reason",
+        "transformers": [
+            "datavalue-to-json",
+            "opcua-value-extractor"
+        ],
+        "datasinks": [
+            "ws1-aas-pause-reason"
+        ],
+        "trigger": "event"
+    },
+    {
+        "routeId": "ws1-aas-pause-reason-type-route",
+        "datasource": "ws1-aas-pause-reason-type",
+        "transformers": [
+            "datavalue-to-json",
+            "opcua-value-extractor"
+        ],
+        "datasinks": [
+            "ws1-aas-pause-reason-type"
+        ],
+        "trigger": "event"
+    },
+    {
+        "routeId": "ws1-kpi-availability-value-route",
+        "datasource": "ws1-kpi-availability-value",
+        "transformers": [
+            "datavalue-to-json",
+            "opcua-value-extractor"
+        ],
+        "datasinks": [
+            "ws1-kpi-availability-value"
+        ],
+        "trigger": "event"
+    },
+    {
+        "routeId": "ws1-kpi-availability-plannedproductiontime-route",
+        "datasource": "ws1-kpi-availability-plannedproductiontime",
+        "transformers": [
+            "datavalue-to-json",
+            "opcua-value-extractor"
+        ],
+        "datasinks": [
+            "ws1-kpi-availability-plannedproductiontime"
+        ],
+        "trigger": "event"
+    },
+    {
+        "routeId": "ws1-kpi-availability-actualproductiontime-route",
+        "datasource": "ws1-kpi-availability-actualproductiontime",
+        "transformers": [
+            "datavalue-to-json",
+            "opcua-value-extractor"
+        ],
+        "datasinks": [
+            "ws1-kpi-availability-actualproductiontime"
+        ],
+        "trigger": "event"
+    },
+    {
+        "routeId": "ws1-kpi-availability-lastupdated-route",
+        "datasource": "ws1-kpi-availability-lastupdated",
+        "transformers": [
+            "datavalue-to-json",
+            "opcua-value-extractor"
+        ],
+        "datasinks": [
+            "ws1-kpi-availability-lastupdated"
+        ],
+        "trigger": "event"
+    },
+    {
+        "routeId": "ws1-kpi-performance-value-route",
+        "datasource": "ws1-kpi-performance-value",
+        "transformers": [
+            "datavalue-to-json",
+            "opcua-value-extractor"
+        ],
+        "datasinks": [
+            "ws1-kpi-performance-value"
+        ],
+        "trigger": "event"
+    },
+    {
+        "routeId": "ws1-kpi-performance-idealcycletime-route",
+        "datasource": "ws1-kpi-performance-idealcycletime",
+        "transformers": [
+            "datavalue-to-json",
+            "opcua-value-extractor"
+        ],
+        "datasinks": [
+            "ws1-kpi-performance-idealcycletime"
+        ],
+        "trigger": "event"
+    },
+    {
+        "routeId": "ws1-kpi-performance-actualcycletime-route",
+        "datasource": "ws1-kpi-performance-actualcycletime",
+        "transformers": [
+            "datavalue-to-json",
+            "opcua-value-extractor"
+        ],
+        "datasinks": [
+            "ws1-kpi-performance-actualcycletime"
+        ],
+        "trigger": "event"
+    },
+    {
+        "routeId": "ws1-kpi-performance-totalunitsproduced-route",
+        "datasource": "ws1-kpi-performance-totalunitsproduced",
+        "transformers": [
+            "datavalue-to-json",
+            "opcua-value-extractor"
+        ],
+        "datasinks": [
+            "ws1-kpi-performance-totalunitsproduced"
+        ],
+        "trigger": "event"
+    },
+    {
+        "routeId": "ws1-kpi-performance-lastupdated-route",
+        "datasource": "ws1-kpi-performance-lastupdated",
+        "transformers": [
+            "datavalue-to-json",
+            "opcua-value-extractor"
+        ],
+        "datasinks": [
+            "ws1-kpi-performance-lastupdated"
+        ],
+        "trigger": "event"
+    },
+    {
+        "routeId": "ws1-kpi-quality-value-route",
+        "datasource": "ws1-kpi-quality-value",
+        "transformers": [
+            "datavalue-to-json",
+            "opcua-value-extractor"
+        ],
+        "datasinks": [
+            "ws1-kpi-quality-value"
+        ],
+        "trigger": "event"
+    },
+    {
+        "routeId": "ws1-kpi-quality-goodunits-route",
+        "datasource": "ws1-kpi-quality-goodunits",
+        "transformers": [
+            "datavalue-to-json",
+            "opcua-value-extractor"
+        ],
+        "datasinks": [
+            "ws1-kpi-quality-goodunits"
+        ],
+        "trigger": "event"
+    },
+    {
+        "routeId": "ws1-kpi-quality-defectiveunits-route",
+        "datasource": "ws1-kpi-quality-defectiveunits",
+        "transformers": [
+            "datavalue-to-json",
+            "opcua-value-extractor"
+        ],
+        "datasinks": [
+            "ws1-kpi-quality-defectiveunits"
+        ],
+        "trigger": "event"
+    },
+    {
+        "routeId": "ws1-kpi-quality-lastupdated-route",
+        "datasource": "ws1-kpi-quality-lastupdated",
+        "transformers": [
+            "datavalue-to-json",
+            "opcua-value-extractor"
+        ],
+        "datasinks": [
+            "ws1-kpi-quality-lastupdated"
+        ],
+        "trigger": "event"
+    },
+    {
+        "routeId": "ws1-kpi-oee-value-route",
+        "datasource": "ws1-kpi-oee-value",
+        "transformers": [
+            "datavalue-to-json",
+            "opcua-value-extractor"
+        ],
+        "datasinks": [
+            "ws1-kpi-oee-value"
+        ],
+        "trigger": "event"
+    },
+    {
+        "routeId": "ws1-kpi-oee-calculationperiodstart-route",
+        "datasource": "ws1-kpi-oee-calculationperiodstart",
+        "transformers": [
+            "datavalue-to-json",
+            "opcua-value-extractor"
+        ],
+        "datasinks": [
+            "ws1-kpi-oee-calculationperiodstart"
+        ],
+        "trigger": "event"
+    },
+    {
+        "routeId": "ws1-kpi-oee-calculationperiodend-route",
+        "datasource": "ws1-kpi-oee-calculationperiodend",
+        "transformers": [
+            "datavalue-to-json",
+            "opcua-value-extractor"
+        ],
+        "datasinks": [
+            "ws1-kpi-oee-calculationperiodend"
+        ],
+        "trigger": "event"
+    },
+    {
+        "routeId": "ws1-kpi-oee-lastupdated-route",
+        "datasource": "ws1-kpi-oee-lastupdated",
+        "transformers": [
+            "datavalue-to-json",
+            "opcua-value-extractor"
+        ],
+        "datasinks": [
+            "ws1-kpi-oee-lastupdated"
+        ],
+        "trigger": "event"
+    },
+    {
+        "routeId": "ws2-aas-state-route",
+        "datasource": "ws2-aas-state",
+        "transformers": [
+            "datavalue-to-json",
+            "opcua-value-extractor"
+        ],
+        "datasinks": [
+            "ws2-aas-state"
+        ],
+        "trigger": "event"
+    },
+    {
+        "routeId": "ws2-aas-workorder-id-route",
+        "datasource": "ws2-aas-workorder-id",
+        "transformers": [
+            "datavalue-to-json",
+            "opcua-value-extractor"
+        ],
+        "datasinks": [
+            "ws2-aas-workorder-id"
+        ],
+        "trigger": "event"
+    },
+    {
+        "routeId": "ws2-aas-mo-id-route",
+        "datasource": "ws2-aas-mo-id",
+        "transformers": [
+            "datavalue-to-json",
+            "opcua-value-extractor"
+        ],
+        "datasinks": [
+            "ws2-aas-mo-id"
+        ],
+        "trigger": "event"
+    },
+    {
+        "routeId": "ws2-aas-pause-reason-route",
+        "datasource": "ws2-aas-pause-reason",
+        "transformers": [
+            "datavalue-to-json",
+            "opcua-value-extractor"
+        ],
+        "datasinks": [
+            "ws2-aas-pause-reason"
+        ],
+        "trigger": "event"
+    },
+    {
+        "routeId": "ws2-aas-pause-reason-type-route",
+        "datasource": "ws2-aas-pause-reason-type",
+        "transformers": [
+            "datavalue-to-json",
+            "opcua-value-extractor"
+        ],
+        "datasinks": [
+            "ws2-aas-pause-reason-type"
+        ],
+        "trigger": "event"
+    },
+    {
+        "routeId": "ws2-leftwheel-route",
+        "datasource": "ws2-leftwheel",
+        "transformers": [
+            "datavalue-to-json",
+            "opcua-value-extractor"
+        ],
+        "datasinks": [
+            "ws2-leftwheel"
+        ],
+        "trigger": "event"
+    },
+    {
+        "routeId": "ws2-rightwheel-route",
+        "datasource": "ws2-rightwheel",
+        "transformers": [
+            "datavalue-to-json",
+            "opcua-value-extractor"
+        ],
+        "datasinks": [
+            "ws2-rightwheel"
+        ],
+        "trigger": "event"
+    },
+    {
+        "routeId": "ws2-kpi-availability-value-route",
+        "datasource": "ws2-kpi-availability-value",
+        "transformers": [
+            "datavalue-to-json",
+            "opcua-value-extractor"
+        ],
+        "datasinks": [
+            "ws2-kpi-availability-value"
+        ],
+        "trigger": "event"
+    },
+    {
+        "routeId": "ws2-kpi-availability-plannedproductiontime-route",
+        "datasource": "ws2-kpi-availability-plannedproductiontime",
+        "transformers": [
+            "datavalue-to-json",
+            "opcua-value-extractor"
+        ],
+        "datasinks": [
+            "ws2-kpi-availability-plannedproductiontime"
+        ],
+        "trigger": "event"
+    },
+    {
+        "routeId": "ws2-kpi-availability-actualproductiontime-route",
+        "datasource": "ws2-kpi-availability-actualproductiontime",
+        "transformers": [
+            "datavalue-to-json",
+            "opcua-value-extractor"
+        ],
+        "datasinks": [
+            "ws2-kpi-availability-actualproductiontime"
+        ],
+        "trigger": "event"
+    },
+    {
+        "routeId": "ws2-kpi-availability-lastupdated-route",
+        "datasource": "ws2-kpi-availability-lastupdated",
+        "transformers": [
+            "datavalue-to-json",
+            "opcua-value-extractor"
+        ],
+        "datasinks": [
+            "ws2-kpi-availability-lastupdated"
+        ],
+        "trigger": "event"
+    },
+    {
+        "routeId": "ws2-kpi-performance-value-route",
+        "datasource": "ws2-kpi-performance-value",
+        "transformers": [
+            "datavalue-to-json",
+            "opcua-value-extractor"
+        ],
+        "datasinks": [
+            "ws2-kpi-performance-value"
+        ],
+        "trigger": "event"
+    },
+    {
+        "routeId": "ws2-kpi-performance-idealcycletime-route",
+        "datasource": "ws2-kpi-performance-idealcycletime",
+        "transformers": [
+            "datavalue-to-json",
+            "opcua-value-extractor"
+        ],
+        "datasinks": [
+            "ws2-kpi-performance-idealcycletime"
+        ],
+        "trigger": "event"
+    },
+    {
+        "routeId": "ws2-kpi-performance-actualcycletime-route",
+        "datasource": "ws2-kpi-performance-actualcycletime",
+        "transformers": [
+            "datavalue-to-json",
+            "opcua-value-extractor"
+        ],
+        "datasinks": [
+            "ws2-kpi-performance-actualcycletime"
+        ],
+        "trigger": "event"
+    },
+    {
+        "routeId": "ws2-kpi-performance-totalunitsproduced-route",
+        "datasource": "ws2-kpi-performance-totalunitsproduced",
+        "transformers": [
+            "datavalue-to-json",
+            "opcua-value-extractor"
+        ],
+        "datasinks": [
+            "ws2-kpi-performance-totalunitsproduced"
+        ],
+        "trigger": "event"
+    },
+    {
+        "routeId": "ws2-kpi-performance-lastupdated-route",
+        "datasource": "ws2-kpi-performance-lastupdated",
+        "transformers": [
+            "datavalue-to-json",
+            "opcua-value-extractor"
+        ],
+        "datasinks": [
+            "ws2-kpi-performance-lastupdated"
+        ],
+        "trigger": "event"
+    },
+    {
+        "routeId": "ws2-kpi-quality-value-route",
+        "datasource": "ws2-kpi-quality-value",
+        "transformers": [
+            "datavalue-to-json",
+            "opcua-value-extractor"
+        ],
+        "datasinks": [
+            "ws2-kpi-quality-value"
+        ],
+        "trigger": "event"
+    },
+    {
+        "routeId": "ws2-kpi-quality-goodunits-route",
+        "datasource": "ws2-kpi-quality-goodunits",
+        "transformers": [
+            "datavalue-to-json",
+            "opcua-value-extractor"
+        ],
+        "datasinks": [
+            "ws2-kpi-quality-goodunits"
+        ],
+        "trigger": "event"
+    },
+    {
+        "routeId": "ws2-kpi-quality-defectiveunits-route",
+        "datasource": "ws2-kpi-quality-defectiveunits",
+        "transformers": [
+            "datavalue-to-json",
+            "opcua-value-extractor"
+        ],
+        "datasinks": [
+            "ws2-kpi-quality-defectiveunits"
+        ],
+        "trigger": "event"
+    },
+    {
+        "routeId": "ws2-kpi-quality-lastupdated-route",
+        "datasource": "ws2-kpi-quality-lastupdated",
+        "transformers": [
+            "datavalue-to-json",
+            "opcua-value-extractor"
+        ],
+        "datasinks": [
+            "ws2-kpi-quality-lastupdated"
+        ],
+        "trigger": "event"
+    },
+    {
+        "routeId": "ws2-kpi-oee-value-route",
+        "datasource": "ws2-kpi-oee-value",
+        "transformers": [
+            "datavalue-to-json",
+            "opcua-value-extractor"
+        ],
+        "datasinks": [
+            "ws2-kpi-oee-value"
+        ],
+        "trigger": "event"
+    },
+    {
+        "routeId": "ws2-kpi-oee-calculationperiodstart-route",
+        "datasource": "ws2-kpi-oee-calculationperiodstart",
+        "transformers": [
+            "datavalue-to-json",
+            "opcua-value-extractor"
+        ],
+        "datasinks": [
+            "ws2-kpi-oee-calculationperiodstart"
+        ],
+        "trigger": "event"
+    },
+    {
+        "routeId": "ws2-kpi-oee-calculationperiodend-route",
+        "datasource": "ws2-kpi-oee-calculationperiodend",
+        "transformers": [
+            "datavalue-to-json",
+            "opcua-value-extractor"
+        ],
+        "datasinks": [
+            "ws2-kpi-oee-calculationperiodend"
+        ],
+        "trigger": "event"
+    },
+    {
+        "routeId": "ws2-kpi-oee-lastupdated-route",
+        "datasource": "ws2-kpi-oee-lastupdated",
+        "transformers": [
+            "datavalue-to-json",
+            "opcua-value-extractor"
+        ],
+        "datasinks": [
+            "ws2-kpi-oee-lastupdated"
+        ],
+        "trigger": "event"
+    },
+    {
+        "routeId": "ws3-aas-state-route",
+        "datasource": "ws3-aas-state",
+        "transformers": [
+            "datavalue-to-json",
+            "opcua-value-extractor"
+        ],
+        "datasinks": [
+            "ws3-aas-state"
+        ],
+        "trigger": "event"
+    },
+    {
+        "routeId": "ws3-aas-workorder-id-route",
+        "datasource": "ws3-aas-workorder-id",
+        "transformers": [
+            "datavalue-to-json",
+            "opcua-value-extractor"
+        ],
+        "datasinks": [
+            "ws3-aas-workorder-id"
+        ],
+        "trigger": "event"
+    },
+    {
+        "routeId": "ws3-aas-mo-id-route",
+        "datasource": "ws3-aas-mo-id",
+        "transformers": [
+            "datavalue-to-json",
+            "opcua-value-extractor"
+        ],
+        "datasinks": [
+            "ws3-aas-mo-id"
+        ],
+        "trigger": "event"
+    },
+    {
+        "routeId": "ws3-aas-pause-reason-route",
+        "datasource": "ws3-aas-pause-reason",
+        "transformers": [
+            "datavalue-to-json",
+            "opcua-value-extractor"
+        ],
+        "datasinks": [
+            "ws3-aas-pause-reason"
+        ],
+        "trigger": "event"
+    },
+    {
+        "routeId": "ws3-aas-pause-reason-type-route",
+        "datasource": "ws3-aas-pause-reason-type",
+        "transformers": [
+            "datavalue-to-json",
+            "opcua-value-extractor"
+        ],
+        "datasinks": [
+            "ws3-aas-pause-reason-type"
+        ],
+        "trigger": "event"
+    },
+    {
+        "routeId": "ws3-kpi-availability-value-route",
+        "datasource": "ws3-kpi-availability-value",
+        "transformers": [
+            "datavalue-to-json",
+            "opcua-value-extractor"
+        ],
+        "datasinks": [
+            "ws3-kpi-availability-value"
+        ],
+        "trigger": "event"
+    },
+    {
+        "routeId": "ws3-kpi-availability-plannedproductiontime-route",
+        "datasource": "ws3-kpi-availability-plannedproductiontime",
+        "transformers": [
+            "datavalue-to-json",
+            "opcua-value-extractor"
+        ],
+        "datasinks": [
+            "ws3-kpi-availability-plannedproductiontime"
+        ],
+        "trigger": "event"
+    },
+    {
+        "routeId": "ws3-kpi-availability-actualproductiontime-route",
+        "datasource": "ws3-kpi-availability-actualproductiontime",
+        "transformers": [
+            "datavalue-to-json",
+            "opcua-value-extractor"
+        ],
+        "datasinks": [
+            "ws3-kpi-availability-actualproductiontime"
+        ],
+        "trigger": "event"
+    },
+    {
+        "routeId": "ws3-kpi-availability-lastupdated-route",
+        "datasource": "ws3-kpi-availability-lastupdated",
+        "transformers": [
+            "datavalue-to-json",
+            "opcua-value-extractor"
+        ],
+        "datasinks": [
+            "ws3-kpi-availability-lastupdated"
+        ],
+        "trigger": "event"
+    },
+    {
+        "routeId": "ws3-kpi-performance-value-route",
+        "datasource": "ws3-kpi-performance-value",
+        "transformers": [
+            "datavalue-to-json",
+            "opcua-value-extractor"
+        ],
+        "datasinks": [
+            "ws3-kpi-performance-value"
+        ],
+        "trigger": "event"
+    },
+    {
+        "routeId": "ws3-kpi-performance-idealcycletime-route",
+        "datasource": "ws3-kpi-performance-idealcycletime",
+        "transformers": [
+            "datavalue-to-json",
+            "opcua-value-extractor"
+        ],
+        "datasinks": [
+            "ws3-kpi-performance-idealcycletime"
+        ],
+        "trigger": "event"
+    },
+    {
+        "routeId": "ws3-kpi-performance-actualcycletime-route",
+        "datasource": "ws3-kpi-performance-actualcycletime",
+        "transformers": [
+            "datavalue-to-json",
+            "opcua-value-extractor"
+        ],
+        "datasinks": [
+            "ws3-kpi-performance-actualcycletime"
+        ],
+        "trigger": "event"
+    },
+    {
+        "routeId": "ws3-kpi-performance-totalunitsproduced-route",
+        "datasource": "ws3-kpi-performance-totalunitsproduced",
+        "transformers": [
+            "datavalue-to-json",
+            "opcua-value-extractor"
+        ],
+        "datasinks": [
+            "ws3-kpi-performance-totalunitsproduced"
+        ],
+        "trigger": "event"
+    },
+    {
+        "routeId": "ws3-kpi-performance-lastupdated-route",
+        "datasource": "ws3-kpi-performance-lastupdated",
+        "transformers": [
+            "datavalue-to-json",
+            "opcua-value-extractor"
+        ],
+        "datasinks": [
+            "ws3-kpi-performance-lastupdated"
+        ],
+        "trigger": "event"
+    },
+    {
+        "routeId": "ws3-kpi-quality-value-route",
+        "datasource": "ws3-kpi-quality-value",
+        "transformers": [
+            "datavalue-to-json",
+            "opcua-value-extractor"
+        ],
+        "datasinks": [
+            "ws3-kpi-quality-value"
+        ],
+        "trigger": "event"
+    },
+    {
+        "routeId": "ws3-kpi-quality-goodunits-route",
+        "datasource": "ws3-kpi-quality-goodunits",
+        "transformers": [
+            "datavalue-to-json",
+            "opcua-value-extractor"
+        ],
+        "datasinks": [
+            "ws3-kpi-quality-goodunits"
+        ],
+        "trigger": "event"
+    },
+    {
+        "routeId": "ws3-kpi-quality-defectiveunits-route",
+        "datasource": "ws3-kpi-quality-defectiveunits",
+        "transformers": [
+            "datavalue-to-json",
+            "opcua-value-extractor"
+        ],
+        "datasinks": [
+            "ws3-kpi-quality-defectiveunits"
+        ],
+        "trigger": "event"
+    },
+    {
+        "routeId": "ws3-kpi-quality-lastupdated-route",
+        "datasource": "ws3-kpi-quality-lastupdated",
+        "transformers": [
+            "datavalue-to-json",
+            "opcua-value-extractor"
+        ],
+        "datasinks": [
+            "ws3-kpi-quality-lastupdated"
+        ],
+        "trigger": "event"
+    },
+    {
+        "routeId": "ws3-kpi-oee-value-route",
+        "datasource": "ws3-kpi-oee-value",
+        "transformers": [
+            "datavalue-to-json",
+            "opcua-value-extractor"
+        ],
+        "datasinks": [
+            "ws3-kpi-oee-value"
+        ],
+        "trigger": "event"
+    },
+    {
+        "routeId": "ws3-kpi-oee-calculationperiodstart-route",
+        "datasource": "ws3-kpi-oee-calculationperiodstart",
+        "transformers": [
+            "datavalue-to-json",
+            "opcua-value-extractor"
+        ],
+        "datasinks": [
+            "ws3-kpi-oee-calculationperiodstart"
+        ],
+        "trigger": "event"
+    },
+    {
+        "routeId": "ws3-kpi-oee-calculationperiodend-route",
+        "datasource": "ws3-kpi-oee-calculationperiodend",
+        "transformers": [
+            "datavalue-to-json",
+            "opcua-value-extractor"
+        ],
+        "datasinks": [
+            "ws3-kpi-oee-calculationperiodend"
+        ],
+        "trigger": "event"
+    },
+    {
+        "routeId": "ws3-kpi-oee-lastupdated-route",
+        "datasource": "ws3-kpi-oee-lastupdated",
+        "transformers": [
+            "datavalue-to-json",
+            "opcua-value-extractor"
+        ],
+        "datasinks": [
+            "ws3-kpi-oee-lastupdated"
+        ],
+        "trigger": "event"
+    },
+    {
+        "routeId": "ws4-aas-state-route",
+        "datasource": "ws4-aas-state",
+        "transformers": [
+            "datavalue-to-json",
+            "opcua-value-extractor"
+        ],
+        "datasinks": [
+            "ws4-aas-state"
+        ],
+        "trigger": "event"
+    },
+    {
+        "routeId": "ws4-aas-workorder-id-route",
+        "datasource": "ws4-aas-workorder-id",
+        "transformers": [
+            "datavalue-to-json",
+            "opcua-value-extractor"
+        ],
+        "datasinks": [
+            "ws4-aas-workorder-id"
+        ],
+        "trigger": "event"
+    },
+    {
+        "routeId": "ws4-aas-mo-id-route",
+        "datasource": "ws4-aas-mo-id",
+        "transformers": [
+            "datavalue-to-json",
+            "opcua-value-extractor"
+        ],
+        "datasinks": [
+            "ws4-aas-mo-id"
+        ],
+        "trigger": "event"
+    },
+    {
+        "routeId": "ws4-aas-pause-reason-route",
+        "datasource": "ws4-aas-pause-reason",
+        "transformers": [
+            "datavalue-to-json",
+            "opcua-value-extractor"
+        ],
+        "datasinks": [
+            "ws4-aas-pause-reason"
+        ],
+        "trigger": "event"
+    },
+    {
+        "routeId": "ws4-aas-pause-reason-type-route",
+        "datasource": "ws4-aas-pause-reason-type",
+        "transformers": [
+            "datavalue-to-json",
+            "opcua-value-extractor"
+        ],
+        "datasinks": [
+            "ws4-aas-pause-reason-type"
+        ],
+        "trigger": "event"
+    },
+    {
+        "routeId": "ws4-kpi-availability-value-route",
+        "datasource": "ws4-kpi-availability-value",
+        "transformers": [
+            "datavalue-to-json",
+            "opcua-value-extractor"
+        ],
+        "datasinks": [
+            "ws4-kpi-availability-value"
+        ],
+        "trigger": "event"
+    },
+    {
+        "routeId": "ws4-kpi-availability-plannedproductiontime-route",
+        "datasource": "ws4-kpi-availability-plannedproductiontime",
+        "transformers": [
+            "datavalue-to-json",
+            "opcua-value-extractor"
+        ],
+        "datasinks": [
+            "ws4-kpi-availability-plannedproductiontime"
+        ],
+        "trigger": "event"
+    },
+    {
+        "routeId": "ws4-kpi-availability-actualproductiontime-route",
+        "datasource": "ws4-kpi-availability-actualproductiontime",
+        "transformers": [
+            "datavalue-to-json",
+            "opcua-value-extractor"
+        ],
+        "datasinks": [
+            "ws4-kpi-availability-actualproductiontime"
+        ],
+        "trigger": "event"
+    },
+    {
+        "routeId": "ws4-kpi-availability-lastupdated-route",
+        "datasource": "ws4-kpi-availability-lastupdated",
+        "transformers": [
+            "datavalue-to-json",
+            "opcua-value-extractor"
+        ],
+        "datasinks": [
+            "ws4-kpi-availability-lastupdated"
+        ],
+        "trigger": "event"
+    },
+    {
+        "routeId": "ws4-kpi-performance-value-route",
+        "datasource": "ws4-kpi-performance-value",
+        "transformers": [
+            "datavalue-to-json",
+            "opcua-value-extractor"
+        ],
+        "datasinks": [
+            "ws4-kpi-performance-value"
+        ],
+        "trigger": "event"
+    },
+    {
+        "routeId": "ws4-kpi-performance-idealcycletime-route",
+        "datasource": "ws4-kpi-performance-idealcycletime",
+        "transformers": [
+            "datavalue-to-json",
+            "opcua-value-extractor"
+        ],
+        "datasinks": [
+            "ws4-kpi-performance-idealcycletime"
+        ],
+        "trigger": "event"
+    },
+    {
+        "routeId": "ws4-kpi-performance-actualcycletime-route",
+        "datasource": "ws4-kpi-performance-actualcycletime",
+        "transformers": [
+            "datavalue-to-json",
+            "opcua-value-extractor"
+        ],
+        "datasinks": [
+            "ws4-kpi-performance-actualcycletime"
+        ],
+        "trigger": "event"
+    },
+    {
+        "routeId": "ws4-kpi-performance-totalunitsproduced-route",
+        "datasource": "ws4-kpi-performance-totalunitsproduced",
+        "transformers": [
+            "datavalue-to-json",
+            "opcua-value-extractor"
+        ],
+        "datasinks": [
+            "ws4-kpi-performance-totalunitsproduced"
+        ],
+        "trigger": "event"
+    },
+    {
+        "routeId": "ws4-kpi-performance-lastupdated-route",
+        "datasource": "ws4-kpi-performance-lastupdated",
+        "transformers": [
+            "datavalue-to-json",
+            "opcua-value-extractor"
+        ],
+        "datasinks": [
+            "ws4-kpi-performance-lastupdated"
+        ],
+        "trigger": "event"
+    },
+    {
+        "routeId": "ws4-kpi-quality-value-route",
+        "datasource": "ws4-kpi-quality-value",
+        "transformers": [
+            "datavalue-to-json",
+            "opcua-value-extractor"
+        ],
+        "datasinks": [
+            "ws4-kpi-quality-value"
+        ],
+        "trigger": "event"
+    },
+    {
+        "routeId": "ws4-kpi-quality-goodunits-route",
+        "datasource": "ws4-kpi-quality-goodunits",
+        "transformers": [
+            "datavalue-to-json",
+            "opcua-value-extractor"
+        ],
+        "datasinks": [
+            "ws4-kpi-quality-goodunits"
+        ],
+        "trigger": "event"
+    },
+    {
+        "routeId": "ws4-kpi-quality-defectiveunits-route",
+        "datasource": "ws4-kpi-quality-defectiveunits",
+        "transformers": [
+            "datavalue-to-json",
+            "opcua-value-extractor"
+        ],
+        "datasinks": [
+            "ws4-kpi-quality-defectiveunits"
+        ],
+        "trigger": "event"
+    },
+    {
+        "routeId": "ws4-kpi-quality-lastupdated-route",
+        "datasource": "ws4-kpi-quality-lastupdated",
+        "transformers": [
+            "datavalue-to-json",
+            "opcua-value-extractor"
+        ],
+        "datasinks": [
+            "ws4-kpi-quality-lastupdated"
+        ],
+        "trigger": "event"
+    },
+    {
+        "routeId": "ws4-kpi-oee-value-route",
+        "datasource": "ws4-kpi-oee-value",
+        "transformers": [
+            "datavalue-to-json",
+            "opcua-value-extractor"
+        ],
+        "datasinks": [
+            "ws4-kpi-oee-value"
+        ],
+        "trigger": "event"
+    },
+    {
+        "routeId": "ws4-kpi-oee-calculationperiodstart-route",
+        "datasource": "ws4-kpi-oee-calculationperiodstart",
+        "transformers": [
+            "datavalue-to-json",
+            "opcua-value-extractor"
+        ],
+        "datasinks": [
+            "ws4-kpi-oee-calculationperiodstart"
+        ],
+        "trigger": "event"
+    },
+    {
+        "routeId": "ws4-kpi-oee-calculationperiodend-route",
+        "datasource": "ws4-kpi-oee-calculationperiodend",
+        "transformers": [
+            "datavalue-to-json",
+            "opcua-value-extractor"
+        ],
+        "datasinks": [
+            "ws4-kpi-oee-calculationperiodend"
+        ],
+        "trigger": "event"
+    },
+    {
+        "routeId": "ws4-kpi-oee-lastupdated-route",
+        "datasource": "ws4-kpi-oee-lastupdated",
+        "transformers": [
+            "datavalue-to-json",
+            "opcua-value-extractor"
+        ],
+        "datasinks": [
+            "ws4-kpi-oee-lastupdated"
+        ],
+        "trigger": "event"
+    }
+]

@@ -1,0 +1,542 @@
+[
+    {
+        "uniqueId": "ws1-aas-state",
+        "submodelEndpoint": "http://aas-env:8081/submodels/V29ya3N0YXRpb25fV1MxX09wZXJhdGlvbmFsRGF0YQ==",
+        "idShortPath": "CurrentState",
+        "api": "DotAAS-V3"
+    },
+    {
+        "uniqueId": "ws1-aas-workorder-id",
+        "submodelEndpoint": "http://aas-env:8081/submodels/V29ya3N0YXRpb25fV1MxX09wZXJhdGlvbmFsRGF0YQ==",
+        "idShortPath": "ActiveWorkOrderId",
+        "api": "DotAAS-V3"
+    },
+    {
+        "uniqueId": "ws1-aas-mo-id",
+        "submodelEndpoint": "http://aas-env:8081/submodels/V29ya3N0YXRpb25fV1MxX09wZXJhdGlvbmFsRGF0YQ==",
+        "idShortPath": "ActiveManufacturingOrderId",
+        "api": "DotAAS-V3"
+    },
+    {
+        "uniqueId": "ws1-aas-pause-reason",
+        "submodelEndpoint": "http://aas-env:8081/submodels/V29ya3N0YXRpb25fV1MxX09wZXJhdGlvbmFsRGF0YQ==",
+        "idShortPath": "PauseReason",
+        "api": "DotAAS-V3"
+    },
+    {
+        "uniqueId": "ws1-aas-pause-reason-type",
+        "submodelEndpoint": "http://aas-env:8081/submodels/V29ya3N0YXRpb25fV1MxX09wZXJhdGlvbmFsRGF0YQ==",
+        "idShortPath": "PauseReasonType",
+        "api": "DotAAS-V3"
+    },
+    {
+        "uniqueId": "ws1-kpi-availability-value",
+        "submodelEndpoint": "http://aas-env:8081/submodels/V29ya3N0YXRpb25fV1MxX0tQSQ==",
+        "idShortPath": "Availability.Value",
+        "api": "DotAAS-V3"
+    },
+    {
+        "uniqueId": "ws1-kpi-availability-plannedproductiontime",
+        "submodelEndpoint": "http://aas-env:8081/submodels/V29ya3N0YXRpb25fV1MxX0tQSQ==",
+        "idShortPath": "Availability.PlannedProductionTime",
+        "api": "DotAAS-V3"
+    },
+    {
+        "uniqueId": "ws1-kpi-availability-actualproductiontime",
+        "submodelEndpoint": "http://aas-env:8081/submodels/V29ya3N0YXRpb25fV1MxX0tQSQ==",
+        "idShortPath": "Availability.ActualProductionTime",
+        "api": "DotAAS-V3"
+    },
+    {
+        "uniqueId": "ws1-kpi-availability-lastupdated",
+        "submodelEndpoint": "http://aas-env:8081/submodels/V29ya3N0YXRpb25fV1MxX0tQSQ==",
+        "idShortPath": "Availability.LastUpdated",
+        "api": "DotAAS-V3"
+    },
+    {
+        "uniqueId": "ws1-kpi-performance-value",
+        "submodelEndpoint": "http://aas-env:8081/submodels/V29ya3N0YXRpb25fV1MxX0tQSQ==",
+        "idShortPath": "Performance.Value",
+        "api": "DotAAS-V3"
+    },
+    {
+        "uniqueId": "ws1-kpi-performance-idealcycletime",
+        "submodelEndpoint": "http://aas-env:8081/submodels/V29ya3N0YXRpb25fV1MxX0tQSQ==",
+        "idShortPath": "Performance.IdealCycleTime",
+        "api": "DotAAS-V3"
+    },
+    {
+        "uniqueId": "ws1-kpi-performance-actualcycletime",
+        "submodelEndpoint": "http://aas-env:8081/submodels/V29ya3N0YXRpb25fV1MxX0tQSQ==",
+        "idShortPath": "Performance.ActualCycleTime",
+        "api": "DotAAS-V3"
+    },
+    {
+        "uniqueId": "ws1-kpi-performance-totalunitsproduced",
+        "submodelEndpoint": "http://aas-env:8081/submodels/V29ya3N0YXRpb25fV1MxX0tQSQ==",
+        "idShortPath": "Performance.TotalUnitsProduced",
+        "api": "DotAAS-V3"
+    },
+    {
+        "uniqueId": "ws1-kpi-performance-lastupdated",
+        "submodelEndpoint": "http://aas-env:8081/submodels/V29ya3N0YXRpb25fV1MxX0tQSQ==",
+        "idShortPath": "Performance.LastUpdated",
+        "api": "DotAAS-V3"
+    },
+    {
+        "uniqueId": "ws1-kpi-quality-value",
+        "submodelEndpoint": "http://aas-env:8081/submodels/V29ya3N0YXRpb25fV1MxX0tQSQ==",
+        "idShortPath": "Quality.Value",
+        "api": "DotAAS-V3"
+    },
+    {
+        "uniqueId": "ws1-kpi-quality-goodunits",
+        "submodelEndpoint": "http://aas-env:8081/submodels/V29ya3N0YXRpb25fV1MxX0tQSQ==",
+        "idShortPath": "Quality.GoodUnits",
+        "api": "DotAAS-V3"
+    },
+    {
+        "uniqueId": "ws1-kpi-quality-defectiveunits",
+        "submodelEndpoint": "http://aas-env:8081/submodels/V29ya3N0YXRpb25fV1MxX0tQSQ==",
+        "idShortPath": "Quality.DefectiveUnits",
+        "api": "DotAAS-V3"
+    },
+    {
+        "uniqueId": "ws1-kpi-quality-lastupdated",
+        "submodelEndpoint": "http://aas-env:8081/submodels/V29ya3N0YXRpb25fV1MxX0tQSQ==",
+        "idShortPath": "Quality.LastUpdated",
+        "api": "DotAAS-V3"
+    },
+    {
+        "uniqueId": "ws1-kpi-oee-value",
+        "submodelEndpoint": "http://aas-env:8081/submodels/V29ya3N0YXRpb25fV1MxX0tQSQ==",
+        "idShortPath": "OEE.Value",
+        "api": "DotAAS-V3"
+    },
+    {
+        "uniqueId": "ws1-kpi-oee-calculationperiodstart",
+        "submodelEndpoint": "http://aas-env:8081/submodels/V29ya3N0YXRpb25fV1MxX0tQSQ==",
+        "idShortPath": "OEE.CalculationPeriodStart",
+        "api": "DotAAS-V3"
+    },
+    {
+        "uniqueId": "ws1-kpi-oee-calculationperiodend",
+        "submodelEndpoint": "http://aas-env:8081/submodels/V29ya3N0YXRpb25fV1MxX0tQSQ==",
+        "idShortPath": "OEE.CalculationPeriodEnd",
+        "api": "DotAAS-V3"
+    },
+    {
+        "uniqueId": "ws1-kpi-oee-lastupdated",
+        "submodelEndpoint": "http://aas-env:8081/submodels/V29ya3N0YXRpb25fV1MxX0tQSQ==",
+        "idShortPath": "OEE.LastUpdated",
+        "api": "DotAAS-V3"
+    },
+    {
+        "uniqueId": "ws2-aas-state",
+        "submodelEndpoint": "http://aas-env:8081/submodels/V29ya3N0YXRpb25fV1MyX09wZXJhdGlvbmFsRGF0YQ==",
+        "idShortPath": "CurrentState",
+        "api": "DotAAS-V3"
+    },
+    {
+        "uniqueId": "ws2-aas-workorder-id",
+        "submodelEndpoint": "http://aas-env:8081/submodels/V29ya3N0YXRpb25fV1MyX09wZXJhdGlvbmFsRGF0YQ==",
+        "idShortPath": "ActiveWorkOrderId",
+        "api": "DotAAS-V3"
+    },
+    {
+        "uniqueId": "ws2-aas-mo-id",
+        "submodelEndpoint": "http://aas-env:8081/submodels/V29ya3N0YXRpb25fV1MyX09wZXJhdGlvbmFsRGF0YQ==",
+        "idShortPath": "ActiveManufacturingOrderId",
+        "api": "DotAAS-V3"
+    },
+    {
+        "uniqueId": "ws2-aas-pause-reason",
+        "submodelEndpoint": "http://aas-env:8081/submodels/V29ya3N0YXRpb25fV1MyX09wZXJhdGlvbmFsRGF0YQ==",
+        "idShortPath": "PauseReason",
+        "api": "DotAAS-V3"
+    },
+    {
+        "uniqueId": "ws2-aas-pause-reason-type",
+        "submodelEndpoint": "http://aas-env:8081/submodels/V29ya3N0YXRpb25fV1MyX09wZXJhdGlvbmFsRGF0YQ==",
+        "idShortPath": "PauseReasonType",
+        "api": "DotAAS-V3"
+    },
+    {
+        "uniqueId": "ws2-leftwheel",
+        "submodelEndpoint": "http://aas-env:8081/submodels/V29ya3N0YXRpb25fV1MyX1JvYm90RGF0YQ==",
+        "idShortPath": "LeftWheelVelocity",
+        "api": "DotAAS-V3"
+    },
+    {
+        "uniqueId": "ws2-rightwheel",
+        "submodelEndpoint": "http://aas-env:8081/submodels/V29ya3N0YXRpb25fV1MyX1JvYm90RGF0YQ==",
+        "idShortPath": "RightWheelVelocity",
+        "api": "DotAAS-V3"
+    },
+    {
+        "uniqueId": "ws2-kpi-availability-value",
+        "submodelEndpoint": "http://aas-env:8081/submodels/V29ya3N0YXRpb25fV1MyX0tQSQ==",
+        "idShortPath": "Availability.Value",
+        "api": "DotAAS-V3"
+    },
+    {
+        "uniqueId": "ws2-kpi-availability-plannedproductiontime",
+        "submodelEndpoint": "http://aas-env:8081/submodels/V29ya3N0YXRpb25fV1MyX0tQSQ==",
+        "idShortPath": "Availability.PlannedProductionTime",
+        "api": "DotAAS-V3"
+    },
+    {
+        "uniqueId": "ws2-kpi-availability-actualproductiontime",
+        "submodelEndpoint": "http://aas-env:8081/submodels/V29ya3N0YXRpb25fV1MyX0tQSQ==",
+        "idShortPath": "Availability.ActualProductionTime",
+        "api": "DotAAS-V3"
+    },
+    {
+        "uniqueId": "ws2-kpi-availability-lastupdated",
+        "submodelEndpoint": "http://aas-env:8081/submodels/V29ya3N0YXRpb25fV1MyX0tQSQ==",
+        "idShortPath": "Availability.LastUpdated",
+        "api": "DotAAS-V3"
+    },
+    {
+        "uniqueId": "ws2-kpi-performance-value",
+        "submodelEndpoint": "http://aas-env:8081/submodels/V29ya3N0YXRpb25fV1MyX0tQSQ==",
+        "idShortPath": "Performance.Value",
+        "api": "DotAAS-V3"
+    },
+    {
+        "uniqueId": "ws2-kpi-performance-idealcycletime",
+        "submodelEndpoint": "http://aas-env:8081/submodels/V29ya3N0YXRpb25fV1MyX0tQSQ==",
+        "idShortPath": "Performance.IdealCycleTime",
+        "api": "DotAAS-V3"
+    },
+    {
+        "uniqueId": "ws2-kpi-performance-actualcycletime",
+        "submodelEndpoint": "http://aas-env:8081/submodels/V29ya3N0YXRpb25fV1MyX0tQSQ==",
+        "idShortPath": "Performance.ActualCycleTime",
+        "api": "DotAAS-V3"
+    },
+    {
+        "uniqueId": "ws2-kpi-performance-totalunitsproduced",
+        "submodelEndpoint": "http://aas-env:8081/submodels/V29ya3N0YXRpb25fV1MyX0tQSQ==",
+        "idShortPath": "Performance.TotalUnitsProduced",
+        "api": "DotAAS-V3"
+    },
+    {
+        "uniqueId": "ws2-kpi-performance-lastupdated",
+        "submodelEndpoint": "http://aas-env:8081/submodels/V29ya3N0YXRpb25fV1MyX0tQSQ==",
+        "idShortPath": "Performance.LastUpdated",
+        "api": "DotAAS-V3"
+    },
+    {
+        "uniqueId": "ws2-kpi-quality-value",
+        "submodelEndpoint": "http://aas-env:8081/submodels/V29ya3N0YXRpb25fV1MyX0tQSQ==",
+        "idShortPath": "Quality.Value",
+        "api": "DotAAS-V3"
+    },
+    {
+        "uniqueId": "ws2-kpi-quality-goodunits",
+        "submodelEndpoint": "http://aas-env:8081/submodels/V29ya3N0YXRpb25fV1MyX0tQSQ==",
+        "idShortPath": "Quality.GoodUnits",
+        "api": "DotAAS-V3"
+    },
+    {
+        "uniqueId": "ws2-kpi-quality-defectiveunits",
+        "submodelEndpoint": "http://aas-env:8081/submodels/V29ya3N0YXRpb25fV1MyX0tQSQ==",
+        "idShortPath": "Quality.DefectiveUnits",
+        "api": "DotAAS-V3"
+    },
+    {
+        "uniqueId": "ws2-kpi-quality-lastupdated",
+        "submodelEndpoint": "http://aas-env:8081/submodels/V29ya3N0YXRpb25fV1MyX0tQSQ==",
+        "idShortPath": "Quality.LastUpdated",
+        "api": "DotAAS-V3"
+    },
+    {
+        "uniqueId": "ws2-kpi-oee-value",
+        "submodelEndpoint": "http://aas-env:8081/submodels/V29ya3N0YXRpb25fV1MyX0tQSQ==",
+        "idShortPath": "OEE.Value",
+        "api": "DotAAS-V3"
+    },
+    {
+        "uniqueId": "ws2-kpi-oee-calculationperiodstart",
+        "submodelEndpoint": "http://aas-env:8081/submodels/V29ya3N0YXRpb25fV1MyX0tQSQ==",
+        "idShortPath": "OEE.CalculationPeriodStart",
+        "api": "DotAAS-V3"
+    },
+    {
+        "uniqueId": "ws2-kpi-oee-calculationperiodend",
+        "submodelEndpoint": "http://aas-env:8081/submodels/V29ya3N0YXRpb25fV1MyX0tQSQ==",
+        "idShortPath": "OEE.CalculationPeriodEnd",
+        "api": "DotAAS-V3"
+    },
+    {
+        "uniqueId": "ws2-kpi-oee-lastupdated",
+        "submodelEndpoint": "http://aas-env:8081/submodels/V29ya3N0YXRpb25fV1MyX0tQSQ==",
+        "idShortPath": "OEE.LastUpdated",
+        "api": "DotAAS-V3"
+    },
+    {
+        "uniqueId": "ws3-aas-state",
+        "submodelEndpoint": "http://aas-env:8081/submodels/V29ya3N0YXRpb25fV1MzX09wZXJhdGlvbmFsRGF0YQ==",
+        "idShortPath": "CurrentState",
+        "api": "DotAAS-V3"
+    },
+    {
+        "uniqueId": "ws3-aas-workorder-id",
+        "submodelEndpoint": "http://aas-env:8081/submodels/V29ya3N0YXRpb25fV1MzX09wZXJhdGlvbmFsRGF0YQ==",
+        "idShortPath": "ActiveWorkOrderId",
+        "api": "DotAAS-V3"
+    },
+    {
+        "uniqueId": "ws3-aas-mo-id",
+        "submodelEndpoint": "http://aas-env:8081/submodels/V29ya3N0YXRpb25fV1MzX09wZXJhdGlvbmFsRGF0YQ==",
+        "idShortPath": "ActiveManufacturingOrderId",
+        "api": "DotAAS-V3"
+    },
+    {
+        "uniqueId": "ws3-aas-pause-reason",
+        "submodelEndpoint": "http://aas-env:8081/submodels/V29ya3N0YXRpb25fV1MzX09wZXJhdGlvbmFsRGF0YQ==",
+        "idShortPath": "PauseReason",
+        "api": "DotAAS-V3"
+    },
+    {
+        "uniqueId": "ws3-aas-pause-reason-type",
+        "submodelEndpoint": "http://aas-env:8081/submodels/V29ya3N0YXRpb25fV1MzX09wZXJhdGlvbmFsRGF0YQ==",
+        "idShortPath": "PauseReasonType",
+        "api": "DotAAS-V3"
+    },
+    {
+        "uniqueId": "ws3-kpi-availability-value",
+        "submodelEndpoint": "http://aas-env:8081/submodels/V29ya3N0YXRpb25fV1MzX0tQSQ==",
+        "idShortPath": "Availability.Value",
+        "api": "DotAAS-V3"
+    },
+    {
+        "uniqueId": "ws3-kpi-availability-plannedproductiontime",
+        "submodelEndpoint": "http://aas-env:8081/submodels/V29ya3N0YXRpb25fV1MzX0tQSQ==",
+        "idShortPath": "Availability.PlannedProductionTime",
+        "api": "DotAAS-V3"
+    },
+    {
+        "uniqueId": "ws3-kpi-availability-actualproductiontime",
+        "submodelEndpoint": "http://aas-env:8081/submodels/V29ya3N0YXRpb25fV1MzX0tQSQ==",
+        "idShortPath": "Availability.ActualProductionTime",
+        "api": "DotAAS-V3"
+    },
+    {
+        "uniqueId": "ws3-kpi-availability-lastupdated",
+        "submodelEndpoint": "http://aas-env:8081/submodels/V29ya3N0YXRpb25fV1MzX0tQSQ==",
+        "idShortPath": "Availability.LastUpdated",
+        "api": "DotAAS-V3"
+    },
+    {
+        "uniqueId": "ws3-kpi-performance-value",
+        "submodelEndpoint": "http://aas-env:8081/submodels/V29ya3N0YXRpb25fV1MzX0tQSQ==",
+        "idShortPath": "Performance.Value",
+        "api": "DotAAS-V3"
+    },
+    {
+        "uniqueId": "ws3-kpi-performance-idealcycletime",
+        "submodelEndpoint": "http://aas-env:8081/submodels/V29ya3N0YXRpb25fV1MzX0tQSQ==",
+        "idShortPath": "Performance.IdealCycleTime",
+        "api": "DotAAS-V3"
+    },
+    {
+        "uniqueId": "ws3-kpi-performance-actualcycletime",
+        "submodelEndpoint": "http://aas-env:8081/submodels/V29ya3N0YXRpb25fV1MzX0tQSQ==",
+        "idShortPath": "Performance.ActualCycleTime",
+        "api": "DotAAS-V3"
+    },
+    {
+        "uniqueId": "ws3-kpi-performance-totalunitsproduced",
+        "submodelEndpoint": "http://aas-env:8081/submodels/V29ya3N0YXRpb25fV1MzX0tQSQ==",
+        "idShortPath": "Performance.TotalUnitsProduced",
+        "api": "DotAAS-V3"
+    },
+    {
+        "uniqueId": "ws3-kpi-performance-lastupdated",
+        "submodelEndpoint": "http://aas-env:8081/submodels/V29ya3N0YXRpb25fV1MzX0tQSQ==",
+        "idShortPath": "Performance.LastUpdated",
+        "api": "DotAAS-V3"
+    },
+    {
+        "uniqueId": "ws3-kpi-quality-value",
+        "submodelEndpoint": "http://aas-env:8081/submodels/V29ya3N0YXRpb25fV1MzX0tQSQ==",
+        "idShortPath": "Quality.Value",
+        "api": "DotAAS-V3"
+    },
+    {
+        "uniqueId": "ws3-kpi-quality-goodunits",
+        "submodelEndpoint": "http://aas-env:8081/submodels/V29ya3N0YXRpb25fV1MzX0tQSQ==",
+        "idShortPath": "Quality.GoodUnits",
+        "api": "DotAAS-V3"
+    },
+    {
+        "uniqueId": "ws3-kpi-quality-defectiveunits",
+        "submodelEndpoint": "http://aas-env:8081/submodels/V29ya3N0YXRpb25fV1MzX0tQSQ==",
+        "idShortPath": "Quality.DefectiveUnits",
+        "api": "DotAAS-V3"
+    },
+    {
+        "uniqueId": "ws3-kpi-quality-lastupdated",
+        "submodelEndpoint": "http://aas-env:8081/submodels/V29ya3N0YXRpb25fV1MzX0tQSQ==",
+        "idShortPath": "Quality.LastUpdated",
+        "api": "DotAAS-V3"
+    },
+    {
+        "uniqueId": "ws3-kpi-oee-value",
+        "submodelEndpoint": "http://aas-env:8081/submodels/V29ya3N0YXRpb25fV1MzX0tQSQ==",
+        "idShortPath": "OEE.Value",
+        "api": "DotAAS-V3"
+    },
+    {
+        "uniqueId": "ws3-kpi-oee-calculationperiodstart",
+        "submodelEndpoint": "http://aas-env:8081/submodels/V29ya3N0YXRpb25fV1MzX0tQSQ==",
+        "idShortPath": "OEE.CalculationPeriodStart",
+        "api": "DotAAS-V3"
+    },
+    {
+        "uniqueId": "ws3-kpi-oee-calculationperiodend",
+        "submodelEndpoint": "http://aas-env:8081/submodels/V29ya3N0YXRpb25fV1MzX0tQSQ==",
+        "idShortPath": "OEE.CalculationPeriodEnd",
+        "api": "DotAAS-V3"
+    },
+    {
+        "uniqueId": "ws3-kpi-oee-lastupdated",
+        "submodelEndpoint": "http://aas-env:8081/submodels/V29ya3N0YXRpb25fV1MzX0tQSQ==",
+        "idShortPath": "OEE.LastUpdated",
+        "api": "DotAAS-V3"
+    },
+    {
+        "uniqueId": "ws4-aas-state",
+        "submodelEndpoint": "http://aas-env:8081/submodels/V29ya3N0YXRpb25fV1M0X09wZXJhdGlvbmFsRGF0YQ==",
+        "idShortPath": "CurrentState",
+        "api": "DotAAS-V3"
+    },
+    {
+        "uniqueId": "ws4-aas-workorder-id",
+        "submodelEndpoint": "http://aas-env:8081/submodels/V29ya3N0YXRpb25fV1M0X09wZXJhdGlvbmFsRGF0YQ==",
+        "idShortPath": "ActiveWorkOrderId",
+        "api": "DotAAS-V3"
+    },
+    {
+        "uniqueId": "ws4-aas-mo-id",
+        "submodelEndpoint": "http://aas-env:8081/submodels/V29ya3N0YXRpb25fV1M0X09wZXJhdGlvbmFsRGF0YQ==",
+        "idShortPath": "ActiveManufacturingOrderId",
+        "api": "DotAAS-V3"
+    },
+    {
+        "uniqueId": "ws4-aas-pause-reason",
+        "submodelEndpoint": "http://aas-env:8081/submodels/V29ya3N0YXRpb25fV1M0X09wZXJhdGlvbmFsRGF0YQ==",
+        "idShortPath": "PauseReason",
+        "api": "DotAAS-V3"
+    },
+    {
+        "uniqueId": "ws4-aas-pause-reason-type",
+        "submodelEndpoint": "http://aas-env:8081/submodels/V29ya3N0YXRpb25fV1M0X09wZXJhdGlvbmFsRGF0YQ==",
+        "idShortPath": "PauseReasonType",
+        "api": "DotAAS-V3"
+    },
+    {
+        "uniqueId": "ws4-kpi-availability-value",
+        "submodelEndpoint": "http://aas-env:8081/submodels/V29ya3N0YXRpb25fV1M0X0tQSQ==",
+        "idShortPath": "Availability.Value",
+        "api": "DotAAS-V3"
+    },
+    {
+        "uniqueId": "ws4-kpi-availability-plannedproductiontime",
+        "submodelEndpoint": "http://aas-env:8081/submodels/V29ya3N0YXRpb25fV1M0X0tQSQ==",
+        "idShortPath": "Availability.PlannedProductionTime",
+        "api": "DotAAS-V3"
+    },
+    {
+        "uniqueId": "ws4-kpi-availability-actualproductiontime",
+        "submodelEndpoint": "http://aas-env:8081/submodels/V29ya3N0YXRpb25fV1M0X0tQSQ==",
+        "idShortPath": "Availability.ActualProductionTime",
+        "api": "DotAAS-V3"
+    },
+    {
+        "uniqueId": "ws4-kpi-availability-lastupdated",
+        "submodelEndpoint": "http://aas-env:8081/submodels/V29ya3N0YXRpb25fV1M0X0tQSQ==",
+        "idShortPath": "Availability.LastUpdated",
+        "api": "DotAAS-V3"
+    },
+    {
+        "uniqueId": "ws4-kpi-performance-value",
+        "submodelEndpoint": "http://aas-env:8081/submodels/V29ya3N0YXRpb25fV1M0X0tQSQ==",
+        "idShortPath": "Performance.Value",
+        "api": "DotAAS-V3"
+    },
+    {
+        "uniqueId": "ws4-kpi-performance-idealcycletime",
+        "submodelEndpoint": "http://aas-env:8081/submodels/V29ya3N0YXRpb25fV1M0X0tQSQ==",
+        "idShortPath": "Performance.IdealCycleTime",
+        "api": "DotAAS-V3"
+    },
+    {
+        "uniqueId": "ws4-kpi-performance-actualcycletime",
+        "submodelEndpoint": "http://aas-env:8081/submodels/V29ya3N0YXRpb25fV1M0X0tQSQ==",
+        "idShortPath": "Performance.ActualCycleTime",
+        "api": "DotAAS-V3"
+    },
+    {
+        "uniqueId": "ws4-kpi-performance-totalunitsproduced",
+        "submodelEndpoint": "http://aas-env:8081/submodels/V29ya3N0YXRpb25fV1M0X0tQSQ==",
+        "idShortPath": "Performance.TotalUnitsProduced",
+        "api": "DotAAS-V3"
+    },
+    {
+        "uniqueId": "ws4-kpi-performance-lastupdated",
+        "submodelEndpoint": "http://aas-env:8081/submodels/V29ya3N0YXRpb25fV1M0X0tQSQ==",
+        "idShortPath": "Performance.LastUpdated",
+        "api": "DotAAS-V3"
+    },
+    {
+        "uniqueId": "ws4-kpi-quality-value",
+        "submodelEndpoint": "http://aas-env:8081/submodels/V29ya3N0YXRpb25fV1M0X0tQSQ==",
+        "idShortPath": "Quality.Value",
+        "api": "DotAAS-V3"
+    },
+    {
+        "uniqueId": "ws4-kpi-quality-goodunits",
+        "submodelEndpoint": "http://aas-env:8081/submodels/V29ya3N0YXRpb25fV1M0X0tQSQ==",
+        "idShortPath": "Quality.GoodUnits",
+        "api": "DotAAS-V3"
+    },
+    {
+        "uniqueId": "ws4-kpi-quality-defectiveunits",
+        "submodelEndpoint": "http://aas-env:8081/submodels/V29ya3N0YXRpb25fV1M0X0tQSQ==",
+        "idShortPath": "Quality.DefectiveUnits",
+        "api": "DotAAS-V3"
+    },
+    {
+        "uniqueId": "ws4-kpi-quality-lastupdated",
+        "submodelEndpoint": "http://aas-env:8081/submodels/V29ya3N0YXRpb25fV1M0X0tQSQ==",
+        "idShortPath": "Quality.LastUpdated",
+        "api": "DotAAS-V3"
+    },
+    {
+        "uniqueId": "ws4-kpi-oee-value",
+        "submodelEndpoint": "http://aas-env:8081/submodels/V29ya3N0YXRpb25fV1M0X0tQSQ==",
+        "idShortPath": "OEE.Value",
+        "api": "DotAAS-V3"
+    },
+    {
+        "uniqueId": "ws4-kpi-oee-calculationperiodstart",
+        "submodelEndpoint": "http://aas-env:8081/submodels/V29ya3N0YXRpb25fV1M0X0tQSQ==",
+        "idShortPath": "OEE.CalculationPeriodStart",
+        "api": "DotAAS-V3"
+    },
+    {
+        "uniqueId": "ws4-kpi-oee-calculationperiodend",
+        "submodelEndpoint": "http://aas-env:8081/submodels/V29ya3N0YXRpb25fV1M0X0tQSQ==",
+        "idShortPath": "OEE.CalculationPeriodEnd",
+        "api": "DotAAS-V3"
+    },
+    {
+        "uniqueId": "ws4-kpi-oee-lastupdated",
+        "submodelEndpoint": "http://aas-env:8081/submodels/V29ya3N0YXRpb25fV1M0X0tQSQ==",
+        "idShortPath": "OEE.LastUpdated",
+        "api": "DotAAS-V3"
+    }
+]

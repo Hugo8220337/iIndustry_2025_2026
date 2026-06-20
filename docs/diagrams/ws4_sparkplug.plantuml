@@ -1,0 +1,56 @@
+@startuml "Workflow Sparkplug B - WS4_Qualidade (Controlo de Qualidade com Nicla Vision)"
+skinparam BoxPadding 10
+skinparam ParticipantPadding 10
+
+title Workflow Sparkplug B - WS4_Qualidade (Controlo de Qualidade com Nicla Vision)
+
+box "Chão de Fábrica (Edge)"
+actor "Operador (HMI)" as Op
+participant "Nicla Vision\n(Câmara)" as Nicla
+participant "Arduino GIGA" as Arduino
+end box
+
+box "Middleware / Plataforma"
+participant "Node-RED" as NR
+end box
+
+== Atribuição de Ordem e Contexto (DCMD) ==
+NR -> Arduino: MQTT Publish [DCMD]\n<b>Tópico:</b> spBv1.0/ESTG_Fabrica/DCMD/node_red_edge/WS4_Qualidade\n<b>Payload:</b> ASSIGN_WORKORDER\n(WorkOrder, ProductId, ArticleColor, etc.)
+activate Arduino
+Arduino -> Arduino: Guarda dados da ordem e a cor esperada (ArticleColor)
+Arduino -> Op: Ecrã atualizado ("Waiting" -> "Ready")
+deactivate Arduino
+
+== Avaliação de Qualidade Local (Nicla UART) ==
+Op -> Arduino: Pressiona "Avaliar" (HMI)
+activate Arduino
+note over Arduino, Nicla: Início da janela de avaliação de 5 segundos
+Arduino -> Nicla: (Aguarda dados contínuos via Serial1 - UART)
+activate Nicla
+
+Nicla -> Arduino: Dados: label, x, y, score (ex: "Defeito_Risco, 120, 80, 0.95")
+deactivate Nicla
+Arduino -> Arduino: Calcula classe vencedora no fim dos 5 segundos
+Arduino -> Op: Mostra resultado no display\n(ex: "STATUS: Defeito detetado. Confirmar ou rejeitar.")
+deactivate Arduino
+
+== Confirmação do Operador e Envio de Defeito (DDATA) ==
+Op -> Arduino: Pressiona "Confirmar" (Peça Defeituosa)
+activate Arduino
+Arduino -> Arduino: Bloqueia estado da interface\nMapeia a classe para "defectCode" (ex: Defect_Trace)
+Arduino -> NR: MQTT Publish [DDATA]\n<b>Tópico:</b> spBv1.0/ESTG_Fabrica/DDATA/node_red_edge/WS4_Qualidade\n<b>Payload:</b> Event/Type = "Defect_Detected",\nProduction/DefectCode, Product/Id
+activate NR
+NR -> NR: Regista o defeito no Odoo ERP e CrateDB
+
+alt Sucesso (Defeito registado no MES)
+    NR -> Arduino: MQTT Publish [DCMD]\n<b>Payload:</b> Machine/Ack = "200"
+    Arduino -> Arduino: Função finishDecision() envia pedido de "Stop" automático
+    Arduino -> Op: STATUS: Defeito enviado. STOP enviado ao MES.
+else Erro (Falha de comunicação)
+    NR -> Arduino: MQTT Publish [DCMD]\n<b>Payload:</b> Machine/Ack = "400"
+    deactivate NR
+    Arduino -> Op: STATUS: Falha MQTT ao enviar defeito.
+end
+deactivate Arduino
+
+@enduml
